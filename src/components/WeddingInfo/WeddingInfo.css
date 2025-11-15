@@ -1,0 +1,558 @@
+.wedding-info {
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Decorations */
+.bg-decor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.12;
+}
+
+.bg-decor img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bg-decor-1 {
+  top: 50px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  animation: float 8s ease-in-out infinite;
+}
+
+.bg-decor-2 {
+  top: 30%;
+  right: -80px;
+  width: 350px;
+  height: 350px;
+  animation: float 10s ease-in-out infinite 1s;
+}
+
+.bg-decor-3 {
+  top: 60%;
+  left: 50px;
+  width: 250px;
+  height: 250px;
+  animation: float 7s ease-in-out infinite 2s;
+}
+
+.bg-decor-4 {
+  bottom: 150px;
+  right: 80px;
+  width: 280px;
+  height: 280px;
+  animation: float 9s ease-in-out infinite 1.5s;
+}
+
+.bg-decor-5 {
+  top: 20%;
+  left: 40%;
+  width: 200px;
+  height: 200px;
+  animation: float 11s ease-in-out infinite 3s;
+}
+
+.bg-decor-6 {
+  bottom: 30%;
+  right: 30%;
+  width: 220px;
+  height: 220px;
+  animation: float 12s ease-in-out infinite 2.5s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+/* Animation */
+.animate-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 1. Header Section with Logo */
+.info-header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.header-logo {
+  margin-bottom: 20px;
+}
+
+.header-logo img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+.info-description {
+  max-width: 700px;
+  margin: 30px auto 0;
+}
+
+.info-description p {
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  line-height: 1.8;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.couple-names-inline {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  color: var(--color-primary) !important;
+  letter-spacing: 2px;
+  margin-top: 25px !important;
+}
+
+/* 2. Large Couple Photo */
+.couple-main-photo {
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-photo-frame {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-photo-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. Calendar Image */
+.calendar-image-section {
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.calendar-frame {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.calendar-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 4. Parents Section */
+.parents-section {
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.parents-title {
+  font-size: 2rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.parents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.parent-card {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.parent-label {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.parent-names {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.parent-names p {
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+.parent-names .separator {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin: 5px 0;
+}
+
+/* 5. NEW VENUE CARD DESIGN */
+.venue-section {
+  position: relative;
+  z-index: 1;
+}
+
+.venue-card {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  background: white;
+  padding: 40px 35px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.venue-time-header {
+  margin-bottom: 25px;
+}
+
+.venue-time {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: var(--color-dark);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.venue-date {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--color-dark);
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.venue-month-year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.venue-month,
+.venue-year {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  letter-spacing: 1px;
+}
+
+.venue-lunar {
+  font-size: 0.9rem;
+  color: var(--color-dark);
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.venue-divider {
+  height: 1px;
+  background: var(--color-dark);
+  margin: 25px 0;
+}
+
+.venue-location {
+  margin-bottom: 25px;
+}
+
+.venue-at {
+  font-size: 1rem;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.venue-at strong {
+  font-weight: 700;
+}
+
+.venue-hall,
+.venue-address {
+  font-size: 0.95rem;
+  color: var(--color-dark);
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.venue-parents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.venue-parent-group {
+  text-align: center;
+}
+
+.parent-side {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.parent-name {
+  font-size: 0.95rem;
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+.venue-couple {
+  text-align: center;
+}
+
+.couple-role {
+  font-size: 0.95rem;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.couple-name-text {
+  font-weight: 700;
+}
+
+/* Map Container */
+.map-container {
+  margin: 40px 0 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map-wrapper iframe {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+}
+
+/* Directions Button */
+.directions-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-accent) 100%
+  );
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 auto;
+  display: flex;
+  width: fit-content;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.directions-btn span {
+  font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .info-description p {
+    font-size: 1.1rem;
+  }
+
+  .couple-names-inline {
+    font-size: 1.6rem !important;
+  }
+
+  .parents-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .venue-card {
+    padding: 35px 30px;
+  }
+
+  .venue-date {
+    font-size: 5rem;
+  }
+
+  .venue-parents {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bg-decor-5,
+  .bg-decor-6 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-logo img {
+    height: 70px;
+  }
+
+  .info-description p {
+    font-size: 1.05rem;
+  }
+
+  .couple-names-inline {
+    font-size: 1.5rem !important;
+  }
+
+  .parents-title {
+    font-size: 1.7rem;
+  }
+
+  .parent-card {
+    padding: 30px 25px;
+  }
+
+  .venue-card {
+    padding: 30px 25px;
+  }
+
+  .venue-date {
+    font-size: 4.5rem;
+  }
+
+  .bg-decor {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-logo img {
+    height: 50px;
+  }
+
+  .info-description p {
+    font-size: 1rem;
+  }
+
+  .couple-names-inline {
+    font-size: 1.3rem !important;
+  }
+
+  .parent-label {
+    font-size: 1.3rem;
+  }
+
+  .parent-names p {
+    font-size: 1rem;
+  }
+
+  .venue-card {
+    padding: 25px 20px;
+  }
+
+  .venue-time {
+    font-size: 0.85rem;
+  }
+
+  .venue-date {
+    font-size: 4rem;
+  }
+
+  .venue-month,
+  .venue-year {
+    font-size: 1rem;
+  }
+
+  .venue-at,
+  .venue-hall,
+  .venue-address,
+  .parent-name,
+  .couple-role {
+    font-size: 0.9rem;
+  }
+
+  .directions-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .bg-decor {
+    display: none;
+  }
+}
+
+.save-date-marquee {
+  margin: 60px 0;
+  background: white;
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.marquee-wedding-info {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+.marquee-wedding-info span {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 8px;
+  color: #999;
+  padding: 0 40px;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

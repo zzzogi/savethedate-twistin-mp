@@ -1,0 +1,171 @@
+.footer-section {
+  background: var(--color-dark);
+  padding: 60px 20px 30px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-heart {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  25%,
+  75% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.footer-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.footer-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: white;
+  opacity: 0.95;
+  margin-bottom: 30px;
+}
+
+.footer-couple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.couple-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+}
+
+.couple-ampersand {
+  font-size: 1.3rem;
+  font-style: italic;
+  opacity: 0.9;
+  font-family: Georgia, serif;
+  color: white;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-date {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: white;
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 50px 20px 25px;
+  }
+
+  .footer-heart {
+    font-size: 2.5rem;
+  }
+
+  .footer-title {
+    font-size: 2rem;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+
+  .couple-name {
+    font-size: 1.3rem;
+  }
+
+  .couple-ampersand {
+    font-size: 1.1rem;
+  }
+
+  .footer-date {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    padding: 40px 15px 20px;
+  }
+
+  .footer-heart {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-title {
+    font-size: 1.7rem;
+  }
+
+  .footer-text {
+    font-size: 0.95rem;
+  }
+
+  .couple-name {
+    font-size: 1.2rem;
+  }
+
+  .couple-ampersand {
+    font-size: 1rem;
+  }
+
+  .footer-date {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 0.85rem;
+  }
+}

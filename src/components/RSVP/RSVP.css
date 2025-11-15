@@ -1,0 +1,469 @@
+.rsvp-section {
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Decorations */
+.bg-decor-11 {
+  top: 10%;
+  left: -60px;
+  width: 270px;
+  height: 270px;
+  animation: float 12s ease-in-out infinite;
+}
+
+.bg-decor-12 {
+  bottom: 15%;
+  right: -70px;
+  width: 300px;
+  height: 300px;
+  animation: float 11s ease-in-out infinite 2s;
+}
+
+/* Form Container */
+.rsvp-form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.rsvp-form {
+  background: var(--color-secondary);
+  padding: 50px 40px;
+  border-radius: 25px;
+  border: 3px solid var(--color-primary);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid var(--color-light);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(157, 117, 92, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Radio Group */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 20px;
+  background: white;
+  border: 2px solid var(--color-light);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.radio-label:hover {
+  border-color: var(--color-primary);
+  background: rgba(157, 117, 92, 0.05);
+}
+
+.radio-label input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+}
+
+.radio-label span {
+  font-size: 1rem;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+.radio-label input[type="radio"]:checked ~ span {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 18px 40px;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-accent) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(157, 117, 92, 0.4);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(157, 117, 92, 0.5);
+}
+
+.submit-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rsvp-form {
+    padding: 40px 30px;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .form-group input[type="text"],
+  .form-group textarea {
+    padding: 12px 15px;
+  }
+
+  .radio-label {
+    padding: 12px 15px;
+  }
+
+  .submit-btn {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rsvp-form {
+    padding: 30px 20px;
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+  }
+
+  .radio-label span {
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+  }
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease-out;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: white;
+  border-radius: 20px;
+  padding: 50px 40px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid var(--color-dark);
+  color: var(--color-dark);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background: var(--color-dark);
+  color: white;
+}
+
+/* Invitation Card Modal */
+.invitation-card {
+  border: 3px solid var(--color-primary);
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.invitation-header {
+  margin-bottom: 30px;
+}
+
+.invitation-logo {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.invitation-header h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.invitation-greeting {
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  margin-bottom: 15px;
+}
+
+.invitation-name {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.invitation-text {
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.couple-names-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.couple-names-modal .ampersand {
+  font-style: italic;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.invitation-details {
+  background: var(--color-secondary);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.invitation-details p {
+  font-size: 1.05rem;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.invitation-details strong {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.venue-address {
+  opacity: 0.8;
+  font-size: 1rem !important;
+}
+
+.invitation-footer {
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  font-style: italic;
+  margin-top: 30px;
+}
+
+/* Sorry Card Modal */
+.sorry-card {
+  text-align: center;
+}
+
+.sorry-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.sorry-card h2 {
+  font-size: 2.5rem;
+  color: var(--color-dark);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.sorry-text {
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.sorry-text strong {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.sorry-message {
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.couple-signature {
+  padding-top: 20px;
+  border-top: 2px solid var(--color-secondary);
+}
+
+.couple-signature p {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 40px 30px;
+  }
+
+  .invitation-name {
+    font-size: 2rem;
+  }
+
+  .couple-names-modal {
+    font-size: 1.6rem;
+  }
+
+  .sorry-icon {
+    font-size: 4rem;
+  }
+
+  .sorry-card h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 30px 20px;
+  }
+
+  .invitation-logo {
+    height: 50px;
+  }
+
+  .invitation-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .invitation-name {
+    font-size: 1.8rem;
+  }
+
+  .couple-names-modal {
+    font-size: 1.4rem;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .couple-names-modal .ampersand {
+    transform: rotate(90deg);
+  }
+
+  .invitation-details {
+    padding: 20px;
+  }
+
+  .sorry-icon {
+    font-size: 3.5rem;
+  }
+
+  .sorry-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .sorry-text,
+  .sorry-message {
+    font-size: 1rem;
+  }
+}

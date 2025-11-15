@@ -1,0 +1,158 @@
+.countdown-section {
+  background: var(--color-secondary);
+  position: relative;
+  overflow: hidden;
+  padding: 100px 20px;
+}
+
+/* Background Decorations */
+.bg-decor-13 {
+  top: 10%;
+  left: -90px;
+  width: 350px;
+  height: 350px;
+  opacity: 0.15;
+  animation: float 13s ease-in-out infinite;
+}
+
+.bg-decor-14 {
+  bottom: 10%;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  opacity: 0.15;
+  animation: float 12s ease-in-out infinite 1s;
+}
+
+/* Header */
+.countdown-header {
+  margin-bottom: 60px;
+}
+
+.countdown-section .section-title {
+  color: var(--color-dark);
+}
+
+.countdown-section .section-subtitle {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Countdown Timer */
+.countdown-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timer-box {
+  text-align: center;
+  min-width: 120px;
+}
+
+.timer-value {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 15px;
+  color: var(--color-dark);
+  font-family: Georgia, serif;
+}
+
+.timer-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .countdown-section {
+    padding: 80px 20px;
+  }
+
+  .countdown-timer {
+    gap: 25px;
+  }
+
+  .timer-box {
+    min-width: 100px;
+  }
+
+  .timer-value {
+    font-size: 4rem;
+  }
+
+  .timer-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .countdown-section {
+    padding: 70px 15px;
+  }
+
+  .countdown-section .section-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .countdown-timer {
+    gap: 20px;
+  }
+
+  .timer-box {
+    min-width: 80px;
+  }
+
+  .timer-value {
+    font-size: 3.5rem;
+  }
+
+  .timer-label {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-section {
+    padding: 60px 15px;
+  }
+
+  .countdown-section .section-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .countdown-timer {
+    gap: 15px;
+  }
+
+  .timer-box {
+    min-width: 70px;
+  }
+
+  .timer-value {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .timer-label {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+  }
+
+  .bg-decor-13,
+  .bg-decor-14 {
+    display: none;
+  }
+}

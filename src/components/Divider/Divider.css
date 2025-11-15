@@ -1,0 +1,87 @@
+.divider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 60px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+}
+
+.divider-logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider-logo img {
+  display: block;
+  object-fit: contain;
+}
+
+/* Logo Sizes */
+.divider-logo.small img {
+  height: 30px;
+  width: auto;
+}
+
+.divider-logo.medium img {
+  height: 50px;
+  width: auto;
+}
+
+.divider-logo.large img {
+  height: 70px;
+  width: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .divider-container {
+    gap: 15px;
+    margin: 50px auto;
+  }
+
+  .divider-logo.small img {
+    height: 25px;
+  }
+
+  .divider-logo.medium img {
+    height: 40px;
+  }
+
+  .divider-logo.large img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .divider-container {
+    gap: 12px;
+    margin: 40px auto;
+  }
+
+  .divider-logo.small img {
+    height: 20px;
+  }
+
+  .divider-logo.medium img {
+    height: 35px;
+  }
+
+  .divider-logo.large img {
+    height: 50px;
+  }
+}
