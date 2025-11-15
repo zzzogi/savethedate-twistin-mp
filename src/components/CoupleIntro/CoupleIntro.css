@@ -81,13 +81,19 @@
   letter-spacing: 1px;
 }
 
-/* Gallery Grid - 4 COLUMNS DEFAULT */
+/* Gallery Grid - 4 COLUMNS FOR BRIDE */
 .person-gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+/* Single Photo Grid - CENTERED FOR GROOM */
+.person-gallery-single {
+  grid-template-columns: 1fr;
+  max-width: 400px; /* Centered single photo */
 }
 
 .gallery-item {
@@ -116,7 +122,7 @@
   transform: scale(1.1);
 }
 
-/* Stagger animation for gallery items */
+/* Stagger animation for bride gallery items */
 .bride-section .gallery-item:nth-child(1) {
   animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
 }
@@ -133,20 +139,9 @@
   animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
 }
 
-.groom-section .gallery-item:nth-child(1) {
-  animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
-}
-
-.groom-section .gallery-item:nth-child(2) {
+/* Single animation for groom */
+.groom-section .gallery-item {
   animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
-}
-
-.groom-section .gallery-item:nth-child(3) {
-  animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
-}
-
-.groom-section .gallery-item:nth-child(4) {
-  animation: fadeInScale 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
 }
 
 @keyframes fadeInScale {
@@ -174,10 +169,16 @@
     font-size: 2rem;
   }
 
-  /* 3 COLUMNS on tablet */
+  /* 3 COLUMNS on tablet for bride */
   .person-gallery {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+  }
+
+  /* Single photo stays centered */
+  .person-gallery-single {
+    grid-template-columns: 1fr;
+    max-width: 350px;
   }
 }
 
@@ -194,10 +195,15 @@
     font-size: 1.8rem;
   }
 
-  /* 2 COLUMNS on small devices */
+  /* 2 COLUMNS on small devices for bride */
   .person-gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  /* Single photo smaller on mobile */
+  .person-gallery-single {
+    max-width: 300px;
   }
 }
 
@@ -218,9 +224,14 @@
     font-size: 1.5rem;
   }
 
-  /* Keep 2 COLUMNS on mobile */
+  /* Keep 2 COLUMNS on mobile for bride */
   .person-gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+  }
+
+  /* Single photo full width on small mobile */
+  .person-gallery-single {
+    max-width: 100%;
   }
 }

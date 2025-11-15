@@ -2,6 +2,7 @@
   background: white;
   position: relative;
   overflow: hidden;
+  padding: 80px 20px;
 }
 
 /* Background Decorations */
@@ -9,7 +10,7 @@
   position: absolute;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.12;
+  opacity: 0.1;
 }
 
 .bg-decor img {
@@ -19,51 +20,19 @@
 }
 
 .bg-decor-1 {
-  top: 50px;
-  left: -50px;
-  width: 300px;
-  height: 300px;
-  animation: float 8s ease-in-out infinite;
+  top: 10%;
+  left: -80px;
+  width: 400px;
+  height: 400px;
+  animation: float 10s ease-in-out infinite;
 }
 
 .bg-decor-2 {
-  top: 30%;
+  bottom: 10%;
   right: -80px;
-  width: 350px;
-  height: 350px;
-  animation: float 10s ease-in-out infinite 1s;
-}
-
-.bg-decor-3 {
-  top: 60%;
-  left: 50px;
-  width: 250px;
-  height: 250px;
-  animation: float 7s ease-in-out infinite 2s;
-}
-
-.bg-decor-4 {
-  bottom: 150px;
-  right: 80px;
-  width: 280px;
-  height: 280px;
-  animation: float 9s ease-in-out infinite 1.5s;
-}
-
-.bg-decor-5 {
-  top: 20%;
-  left: 40%;
-  width: 200px;
-  height: 200px;
-  animation: float 11s ease-in-out infinite 3s;
-}
-
-.bg-decor-6 {
-  bottom: 30%;
-  right: 30%;
-  width: 220px;
-  height: 220px;
-  animation: float 12s ease-in-out infinite 2.5s;
+  width: 400px;
+  height: 400px;
+  animation: float 12s ease-in-out infinite 2s;
 }
 
 @keyframes float {
@@ -88,471 +57,381 @@
   transform: translateY(0);
 }
 
-/* 1. Header Section with Logo */
-.info-header {
+/* PART 1: Invitation Block */
+.invitation-block {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   position: relative;
   z-index: 1;
 }
 
-.header-logo {
-  margin-bottom: 20px;
-}
-
-.header-logo img {
-  height: 100px;
-  width: auto;
-  object-fit: contain;
-}
-
-.info-description {
-  max-width: 700px;
-  margin: 30px auto 0;
-}
-
-.info-description p {
-  font-size: 1.2rem;
-  color: var(--color-dark);
-  line-height: 1.8;
-  margin-bottom: 15px;
-  opacity: 0.9;
-}
-
-.couple-names-inline {
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
-  color: var(--color-primary) !important;
-  letter-spacing: 2px;
-  margin-top: 25px !important;
-}
-
-/* 2. Large Couple Photo */
-.couple-main-photo {
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 1;
-}
-
-.main-photo-frame {
-  max-width: 700px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.main-photo-frame img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* 3. Calendar Image */
-.calendar-image-section {
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 1;
-}
-
-.calendar-frame {
-  max-width: 750px;
-  margin: 0 auto;
-}
-
-.calendar-frame img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* 4. Parents Section */
-.parents-section {
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 1;
-}
-
-.parents-title {
+.invitation-title {
   font-size: 2rem;
-  color: var(--color-primary);
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: 700;
-}
-
-.parents-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.parent-card {
-  padding: 40px 30px;
-  text-align: center;
-}
-
-.parent-label {
-  font-size: 1.5rem;
-  color: var(--color-primary);
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.parent-names {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
-.parent-names p {
-  font-size: 1.1rem;
   color: var(--color-dark);
   font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  line-height: 1.6;
 }
 
-.parent-names .separator {
-  font-size: 1.3rem;
-  color: var(--color-primary);
-  margin: 5px 0;
+/* Couple Names */
+.couple-names-main {
+  margin-bottom: 60px;
 }
 
-/* 5. NEW VENUE CARD DESIGN */
-.venue-section {
-  position: relative;
-  z-index: 1;
-}
-
-.venue-card {
-  max-width: 600px;
-  margin: 0 auto 50px;
-  background: white;
-  padding: 40px 35px;
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
-.venue-time-header {
-  margin-bottom: 25px;
-}
-
-.venue-time {
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  color: var(--color-dark);
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.venue-date {
-  font-size: 6rem;
+.groom-name,
+.bride-name {
+  font-size: 3.5rem;
   font-weight: 900;
   color: var(--color-dark);
-  line-height: 1;
-  margin: 10px 0;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1.2;
 }
 
-.venue-month-year {
+.groom-name {
+  margin-bottom: 20px;
+}
+
+.bride-name {
+  margin-top: 20px;
+}
+
+.ampersand-decorative {
+  font-size: 4rem;
+  font-style: italic;
+  color: var(--color-primary);
+  font-family: Georgia, serif;
+  margin: 15px 0;
+  display: block;
+}
+
+/* Couple Photo */
+.couple-photo-main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.couple-photo-main img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* PART 2: Ceremony Block */
+.ceremony-block {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.ceremony-title {
+  font-size: 2rem;
+  color: var(--color-dark);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+/* Calendar Display - FIXED */
+.calendar-display {
+  max-width: 700px; /* Wider for single line */
+  margin: 0 auto 60px;
+}
+
+.calendar-day {
+  font-size: 2rem;
+  color: var(--color-dark);
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Date Row - 3 DIVS IN 1 LINE */
+.calendar-date-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  margin-bottom: 10px;
-}
-
-.venue-month,
-.venue-year {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--color-dark);
-  letter-spacing: 1px;
-}
-
-.venue-lunar {
-  font-size: 0.9rem;
-  color: var(--color-dark);
-  font-style: italic;
-  opacity: 0.8;
-}
-
-.venue-divider {
-  height: 1px;
-  background: var(--color-dark);
-  margin: 25px 0;
-}
-
-.venue-location {
-  margin-bottom: 25px;
-}
-
-.venue-at {
-  font-size: 1rem;
-  color: var(--color-dark);
-  margin-bottom: 8px;
-}
-
-.venue-at strong {
-  font-weight: 700;
-}
-
-.venue-hall,
-.venue-address {
-  font-size: 0.95rem;
-  color: var(--color-dark);
-  line-height: 1.6;
-  opacity: 0.9;
-}
-
-.venue-parents {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 25px;
 }
 
-.venue-parent-group {
-  text-align: center;
-}
-
-.parent-side {
-  font-size: 0.9rem;
-  font-weight: 700;
+.calendar-month,
+.calendar-year {
+  font-size: 1.8rem;
   color: var(--color-dark);
-  margin-bottom: 10px;
-  text-transform: capitalize;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-top: 2px solid var(--color-dark);
+  border-bottom: 2px solid var(--color-dark);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.parent-name {
-  font-size: 0.95rem;
+.calendar-date {
+  font-size: 8rem;
+  font-weight: 900;
   color: var(--color-dark);
-  line-height: 1.6;
+  line-height: 1;
+  font-family: Georgia, serif;
 }
 
-.venue-couple {
-  text-align: center;
+.calendar-lunar {
+  font-size: 1.4rem; /* LARGER - was 1.1rem */
+  color: var(--color-dark);
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 20px;
 }
 
-.couple-role {
-  font-size: 0.95rem;
+/* Venue Info Block - WIDER */
+.venue-info-block {
+  max-width: 750px; /* WIDER - was 600px */
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+.venue-label {
+  font-size: 1.3rem;
+  color: var(--color-dark);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.venue-name-main {
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  word-spacing: 0.1em; /* Prevent wrapping */
+}
+
+.venue-detail {
+  font-size: 1.2rem;
   color: var(--color-dark);
   margin-bottom: 8px;
-}
-
-.couple-name-text {
-  font-weight: 700;
-}
-
-/* Map Container */
-.map-container {
-  margin: 40px 0 30px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.map-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-
-.map-wrapper iframe {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  border: 0 !important;
+  opacity: 0.9;
 }
 
 /* Directions Button */
-.directions-btn {
+.directions-button {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 16px 40px;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary) 0%,
-    var(--color-accent) 100%
-  );
-  color: white;
+  gap: 12px;
+  padding: 18px 50px;
+
+  color: var(--color-primary);
   text-decoration: none;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 auto;
-  display: flex;
-  width: fit-content;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
 }
 
-.directions-btn span {
-  font-size: 1.5rem;
+.button-icon {
+  font-size: 1.8rem;
 }
 
 /* Responsive */
 @media (max-width: 968px) {
-  .info-description p {
-    font-size: 1.1rem;
+  .wedding-info {
+    padding: 70px 15px;
   }
 
-  .couple-names-inline {
-    font-size: 1.6rem !important;
+  .invitation-block {
+    margin-bottom: 80px;
   }
 
-  .parents-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .invitation-title,
+  .ceremony-title {
+    font-size: 1.8rem;
   }
 
-  .venue-card {
-    padding: 35px 30px;
+  .groom-name,
+  .bride-name {
+    font-size: 3rem;
   }
 
-  .venue-date {
-    font-size: 5rem;
+  .ampersand-decorative {
+    font-size: 3.5rem;
   }
 
-  .venue-parents {
-    grid-template-columns: 1fr;
+  .calendar-display {
+    max-width: 600px;
+  }
+
+  .calendar-date-row {
     gap: 20px;
   }
 
-  .bg-decor-5,
-  .bg-decor-6 {
-    display: none;
+  .calendar-date {
+    font-size: 7rem;
+  }
+
+  .calendar-month,
+  .calendar-year {
+    font-size: 1.6rem;
+  }
+
+  .calendar-lunar {
+    font-size: 1.3rem;
+  }
+
+  .venue-info-block {
+    max-width: 650px;
+  }
+
+  .venue-name-main {
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 768px) {
-  .header-logo img {
-    height: 70px;
+  .wedding-info {
+    padding: 60px 15px;
   }
 
-  .info-description p {
-    font-size: 1.05rem;
+  .invitation-title,
+  .ceremony-title {
+    font-size: 1.6rem;
   }
 
-  .couple-names-inline {
-    font-size: 1.5rem !important;
+  .groom-name,
+  .bride-name {
+    font-size: 2.5rem;
   }
 
-  .parents-title {
+  .ampersand-decorative {
+    font-size: 3rem;
+  }
+
+  .couple-photo-main {
+    max-width: 100%;
+  }
+
+  .calendar-day {
     font-size: 1.7rem;
   }
 
-  .parent-card {
-    padding: 30px 25px;
+  .calendar-date-row {
+    gap: 15px;
   }
 
-  .venue-card {
-    padding: 30px 25px;
+  .calendar-month,
+  .calendar-year {
+    font-size: 1.4rem;
+    padding: 12px 15px;
   }
 
-  .venue-date {
-    font-size: 4.5rem;
+  .calendar-date {
+    font-size: 6rem;
   }
 
-  .bg-decor {
-    width: 200px !important;
-    height: 200px !important;
+  .calendar-lunar {
+    font-size: 1.2rem;
+  }
+
+  .venue-info-block {
+    max-width: 100%;
+  }
+
+  .venue-name-main {
+    font-size: 1.6rem;
+  }
+
+  .venue-detail {
+    font-size: 1.1rem;
+  }
+
+  .directions-button {
+    padding: 16px 40px;
+    font-size: 1.2rem;
+  }
+
+  .bg-decor-1,
+  .bg-decor-2 {
+    width: 300px !important;
+    height: 300px !important;
   }
 }
 
 @media (max-width: 480px) {
-  .header-logo img {
-    height: 50px;
+  .wedding-info {
+    padding: 50px 15px;
   }
 
-  .info-description p {
-    font-size: 1rem;
+  .invitation-block {
+    margin-bottom: 60px;
   }
 
-  .couple-names-inline {
-    font-size: 1.3rem !important;
+  .invitation-title,
+  .ceremony-title {
+    font-size: 1.4rem;
   }
 
-  .parent-label {
+  .groom-name,
+  .bride-name {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .ampersand-decorative {
+    font-size: 2.5rem;
+  }
+
+  .calendar-day {
+    font-size: 1.5rem;
+  }
+
+  .calendar-date-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .calendar-month,
+  .calendar-year {
     font-size: 1.3rem;
+    padding: 10px 15px;
   }
 
-  .parent-names p {
+  .calendar-date {
+    font-size: 5rem;
+  }
+
+  .calendar-lunar {
+    font-size: 1.1rem;
+  }
+
+  .venue-label {
+    font-size: 1.2rem;
+  }
+
+  .venue-name-main {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  .venue-detail {
     font-size: 1rem;
   }
 
-  .venue-card {
-    padding: 25px 20px;
+  .directions-button {
+    padding: 14px 35px;
+    font-size: 1.1rem;
   }
 
-  .venue-time {
-    font-size: 0.85rem;
+  .button-icon {
+    font-size: 1.5rem;
   }
 
-  .venue-date {
-    font-size: 4rem;
-  }
-
-  .venue-month,
-  .venue-year {
-    font-size: 1rem;
-  }
-
-  .venue-at,
-  .venue-hall,
-  .venue-address,
-  .parent-name,
-  .couple-role {
-    font-size: 0.9rem;
-  }
-
-  .directions-btn {
-    padding: 12px 30px;
-    font-size: 1rem;
-  }
-
-  .bg-decor {
+  .bg-decor-1,
+  .bg-decor-2 {
     display: none;
-  }
-}
-
-.save-date-marquee {
-  margin: 60px 0;
-  background: white;
-  border-top: 2px solid #e5e5e5;
-  border-bottom: 2px solid #e5e5e5;
-  overflow: hidden;
-  padding: 15px 0;
-}
-
-.marquee {
-  overflow: hidden;
-}
-
-.marquee-wedding-info {
-  display: flex;
-  animation: marquee 20s linear infinite;
-  width: max-content;
-}
-
-.marquee-wedding-info span {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 8px;
-  color: #999;
-  padding: 0 40px;
-  white-space: nowrap;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
   }
 }

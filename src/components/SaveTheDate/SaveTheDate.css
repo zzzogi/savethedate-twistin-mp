@@ -1,0 +1,180 @@
+.save-the-date-section {
+  background: white;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 20px;
+}
+
+/* Large Background Decoration */
+.bg-decor-large {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1200px;
+  height: 100%;
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-decor-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Content */
+.std-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Animation */
+.animate-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Title */
+.std-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+/* Save the date subtitle */
+.std-subtitle {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+/* Date */
+.std-date {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--color-dark);
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  font-family: Georgia, serif;
+}
+
+/* Photo Frame */
+.std-photo-frame {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.15);
+}
+
+.std-photo-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .save-the-date-section {
+    padding: 80px 20px;
+  }
+
+  .std-title {
+    font-size: 2.2rem;
+  }
+
+  .std-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .std-date {
+    font-size: 3rem;
+  }
+
+  .std-photo-frame {
+    max-width: 400px;
+  }
+
+  .bg-decor-large {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .save-the-date-section {
+    padding: 70px 15px;
+  }
+
+  .std-title {
+    font-size: 1.9rem;
+  }
+
+  .std-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .std-date {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .std-photo-frame {
+    max-width: 350px;
+    padding: 12px;
+  }
+
+  .bg-decor-large {
+    opacity: 0.05;
+  }
+}
+
+@media (max-width: 480px) {
+  .save-the-date-section {
+    padding: 60px 15px;
+  }
+
+  .std-title {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  .std-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .std-date {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+  }
+
+  .std-photo-frame {
+    max-width: 100%;
+    padding: 10px;
+    border-width: 2px;
+  }
+
+  .bg-decor-large {
+    display: none;
+  }
+}

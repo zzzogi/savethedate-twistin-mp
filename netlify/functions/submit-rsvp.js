@@ -16,7 +16,7 @@ exports.handler = async (event, context) => {
     const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL;
 
     // Forward request to Google Sheets
-    const response = await fetch(GOOGLE_SCRIPT_URL, {
+    await fetch(GOOGLE_SCRIPT_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

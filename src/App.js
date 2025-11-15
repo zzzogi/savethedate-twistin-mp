@@ -8,12 +8,16 @@ import Gallery from "./components/Gallery/Gallery";
 import RSVP from "./components/RSVP/RSVP";
 import Countdown from "./components/Countdown/Countdown";
 import Footer from "./components/Footer/Footer";
+import SaveTheDate from "./components/SaveTheDate/SaveTheDate";
+import Timeline from "./components/Timeline/Timeline";
 
 function App() {
   return (
     <div className="App">
       <Hero />
+      <SaveTheDate />
       <WeddingInfo />
+      <Timeline />
       <CoupleIntro />
       <OurStory />
       <Gallery />

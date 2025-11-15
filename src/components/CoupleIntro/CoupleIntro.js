@@ -47,7 +47,7 @@ const CoupleIntro = () => {
         <h2 className="section-title">Cô Dâu & Chú Rể</h2>
         <p className="section-subtitle">Hai người, một câu chuyện tình yêu</p>
 
-        {/* Bride Section */}
+        {/* Bride Section - 4 PHOTOS */}
         <div
           className={`person-section bride-section animate-section ${
             visibleSections.includes(0) ? "visible" : ""
@@ -77,7 +77,7 @@ const CoupleIntro = () => {
           </div>
         </div>
 
-        {/* Groom Section */}
+        {/* Groom Section - 1 PHOTO ONLY */}
         <div
           className={`person-section groom-section animate-section ${
             visibleSections.includes(1) ? "visible" : ""
@@ -91,18 +91,9 @@ const CoupleIntro = () => {
             <p className="person-name">Nguyễn Chung Bảo</p>
           </div>
 
-          <div className="person-gallery">
+          <div className="person-gallery person-gallery-single">
             <div className="gallery-item">
-              <img src="/images/groom-1.jpg" alt="Chung Bảo 1" />
-            </div>
-            <div className="gallery-item">
-              <img src="/images/groom-2.jpg" alt="Chung Bảo 2" />
-            </div>
-            <div className="gallery-item">
-              <img src="/images/groom-3.jpg" alt="Chung Bảo 3" />
-            </div>
-            <div className="gallery-item">
-              <img src="/images/groom-4.jpg" alt="Chung Bảo 4" />
+              <img src="/images/groom-1.jpg" alt="Chung Bảo" />
             </div>
           </div>
         </div>

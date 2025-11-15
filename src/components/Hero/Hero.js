@@ -8,9 +8,9 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-names">
           <h1 className="hero-title">
-            <span className="name-bride">Minh Phương</span>
+            <span className="name-bride">Chung Bảo</span>
             <span className="ampersand">&</span>
-            <span className="name-groom">Chung Bảo</span>
+            <span className="name-groom">Minh Phương</span>
           </h1>
         </div>
 

@@ -9,12 +9,12 @@ const Footer = () => {
         <div className="footer-content">
           <Icon src="/images/logo.png" alt="Wedding Rings Icon" size="xxxl" />
 
-          <h2 className="footer-title">Cảm Ơn Bạn</h2>
+          <h2 className="footer-title">Thank You!</h2>
 
           <p className="footer-text">
-            Sự hiện diện của bạn là món quà quý giá nhất dành cho chúng tôi.
-            <br />
-            Rất hân hạnh được đón tiếp bạn trong ngày trọng đại này!
+            Cảm ơn bạn đã dành tình cảm cho chúng mình! Sự hiện diện của bạn
+            chính là món quà ý nghĩa nhất, và chúng mình vô cùng trân quý khi
+            được cùng bạn chia sẻ niềm hạnh phúc trong ngày trọng đại này.
           </p>
 
           <div className="footer-bottom">
