@@ -76,6 +76,8 @@ const WeddingInfo = () => {
           </div>
         </div>
 
+        <Divider logo="/images/leaf-1.png" logoSize="large" />
+
         {/* 2. Large Couple Photo */}
         <div
           className={`couple-main-photo animate-section ${
@@ -88,6 +90,8 @@ const WeddingInfo = () => {
             <img src="/images/couple-main.png" alt="Chung Bảo & Minh Phương" />
           </div>
         </div>
+
+        <Divider logo="/images/leaf-2.png" logoSize="large" />
 
         {/* 3. Calendar Image */}
         <div
@@ -142,7 +146,7 @@ const WeddingInfo = () => {
               <p className="venue-lunar">(Tức ngày 11 tháng 10 năm Ất Tỵ)</p>
             </div>
 
-            <Divider logo="/images/champagne.png" logoSize="large" />
+            <Divider logo="/images/cake.png" logoSize="large" />
 
             {/* Venue Location */}
             <div className="venue-location">

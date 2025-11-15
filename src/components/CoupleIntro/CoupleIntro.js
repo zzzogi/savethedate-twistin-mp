@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Divider from "../Divider/Divider";
 import "./CoupleIntro.css";
-import Icon from "../Icon/Icon";
 
 const CoupleIntro = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -55,8 +55,8 @@ const CoupleIntro = () => {
           data-section="0"
           ref={addToRefs}
         >
+          <Divider logo="/images/bride.png" logoSize="extra-large" />
           <div className="person-header">
-            <Icon src="/images/bride.png" alt="Bride Icon" size="xxxl" />
             <h3 className="person-title">Cô Dâu</h3>
             <p className="person-name">Nguyễn Ngọc Minh Phương</p>
           </div>
@@ -85,12 +85,8 @@ const CoupleIntro = () => {
           data-section="1"
           ref={addToRefs}
         >
+          <Divider logo="/images/groom.png" logoSize="extra-large" />
           <div className="person-header">
-            <Icon
-              src="/images/groom.png"
-              alt="Groom Icon"
-              size="pretty-large"
-            />
             <h3 className="person-title">Chú Rể</h3>
             <p className="person-name">Nguyễn Chung Bảo</p>
           </div>

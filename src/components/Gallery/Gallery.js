@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Gallery.css";
 
 const Gallery = () => {
@@ -7,17 +7,13 @@ const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const sectionRefs = useRef([]);
 
+  // Only 5 landscape images
   const galleryImages = [
     "/images/gallery-1.jpg",
     "/images/gallery-2.jpg",
     "/images/gallery-3.jpg",
     "/images/gallery-4.jpg",
     "/images/gallery-5.jpg",
-    "/images/gallery-6.jpg",
-    "/images/gallery-7.jpg",
-    "/images/gallery-8.jpg",
-    "/images/gallery-9.jpg",
-    "/images/gallery-10.jpg",
   ];
 
   useEffect(() => {
@@ -71,10 +67,10 @@ const Gallery = () => {
     <section className="gallery-section section">
       {/* Background decorations */}
       <div className="bg-decor bg-decor-9">
-        <img src="/images/leaf-1.png" alt="Leaf Decoration" />
+        <img src="/wedding-elements/element-9.png" alt="" />
       </div>
       <div className="bg-decor bg-decor-10">
-        <img src="/images/flower-2.png" alt="Flower Decoration" />
+        <img src="/wedding-elements/element-10.png" alt="" />
       </div>
 
       <div className="container">
@@ -106,12 +102,13 @@ const Gallery = () => {
             >
               <img src={image} alt={`Wedding ${index + 1}`} />
               <div className="gallery-overlay">
-                <span className="view-icon">🔍</span>
+                <span>Click để xem ảnh</span>
               </div>
             </div>
           ))}
         </div>
       </div>
+
       {/* Lightbox */}
       {lightboxOpen && (
         <div className="lightbox" onClick={closeLightbox}>

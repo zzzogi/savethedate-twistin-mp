@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Confetti from "react-confetti";
 import "./RSVP.css";
+import Icon from "../Icon/Icon";
 
 const RSVP = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -336,7 +337,7 @@ const RSVP = () => {
               ×
             </button>
 
-            <div className="sorry-icon">😢</div>
+            <Icon src="/images/touch.png" alt="Touch Icon" size="xxxl" />
 
             <h2>Rất Tiếc!</h2>
 

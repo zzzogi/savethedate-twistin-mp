@@ -1,12 +1,13 @@
 import React from "react";
 import "./Footer.css";
+import Icon from "../Icon/Icon";
 
 const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="container">
         <div className="footer-content">
-          <div className="footer-heart">💕</div>
+          <Icon src="/images/logo.png" alt="Wedding Rings Icon" size="xxxl" />
 
           <h2 className="footer-title">Cảm Ơn Bạn</h2>
 
@@ -15,12 +16,6 @@ const Footer = () => {
             <br />
             Rất hân hạnh được đón tiếp bạn trong ngày trọng đại này!
           </p>
-
-          <div className="footer-couple">
-            <span className="couple-name">Chung Bảo</span>
-            <span className="couple-ampersand">&</span>
-            <span className="couple-name">Minh Phương</span>
-          </div>
 
           <div className="footer-bottom">
             <p className="footer-date">30 • 11 • 2025</p>

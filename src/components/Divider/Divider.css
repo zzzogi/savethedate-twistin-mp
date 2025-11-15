@@ -47,6 +47,11 @@
   width: auto;
 }
 
+.divider-logo.extra-large img {
+  height: 100px;
+  width: auto;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .divider-container {
