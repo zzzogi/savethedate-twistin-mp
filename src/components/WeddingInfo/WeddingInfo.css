@@ -435,3 +435,125 @@
     display: none;
   }
 }
+
+/* Family Information Section - NEW */
+.family-info-section {
+  margin: 60px auto;
+  max-width: 900px;
+}
+
+.family-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.family-side {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.family-side-title {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.family-parents {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid rgba(157, 117, 92, 0.2);
+}
+
+.parent-name {
+  font-size: 1.3rem;
+  color: var(--color-dark);
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.family-child {
+  margin-top: 20px;
+}
+
+.child-label {
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  opacity: 0.8;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.child-name {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Responsive for Family Section */
+@media (max-width: 768px) {
+  .family-info-section {
+    margin: 50px auto;
+  }
+
+  .family-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .family-side {
+    padding: 25px 15px;
+  }
+
+  .family-side-title {
+    font-size: 1.6rem;
+  }
+
+  .parent-name {
+    font-size: 1.2rem;
+  }
+
+  .child-label {
+    font-size: 1rem;
+  }
+
+  .child-name {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .family-info-section {
+    margin: 40px auto;
+  }
+
+  .family-grid {
+    gap: 35px;
+  }
+
+  .family-side {
+    padding: 20px 15px;
+  }
+
+  .family-side-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .parent-name {
+    font-size: 1.1rem;
+  }
+
+  .child-label {
+    font-size: 0.95rem;
+  }
+
+  .child-name {
+    font-size: 1.2rem;
+  }
+}

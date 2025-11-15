@@ -95,6 +95,37 @@ const WeddingInfo = () => {
             <p className="calendar-lunar">(Tức ngày 11 tháng 10 năm Ất Tỵ)</p>
           </div>
 
+          {/* NEW: Family Information */}
+          <div className="family-info-section">
+            <div className="family-grid">
+              {/* Nhà Trai */}
+              <div className="family-side">
+                <h4 className="family-side-title">Nhà trai</h4>
+                <div className="family-parents">
+                  <p className="parent-name">Nguyễn Chung Tuấn</p>
+                  <p className="parent-name">Trần Thị Lan</p>
+                </div>
+                <div className="family-child">
+                  <p className="child-label">Chú rể:</p>
+                  <p className="child-name">Nguyễn Chung Bảo</p>
+                </div>
+              </div>
+
+              {/* Nhà Gái */}
+              <div className="family-side">
+                <h4 className="family-side-title">Nhà gái</h4>
+                <div className="family-parents">
+                  <p className="parent-name">Nguyễn Ngọc Dũng</p>
+                  <p className="parent-name">Nguyễn Thị Phương Anh</p>
+                </div>
+                <div className="family-child">
+                  <p className="child-label">Cô dâu:</p>
+                  <p className="child-name">Nguyễn Ngọc Minh Phương</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <Divider logoSize="large" logo="/images/ring.png" />
 
           {/* Venue Information - WIDER */}
