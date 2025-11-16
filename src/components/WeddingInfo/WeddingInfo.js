@@ -101,10 +101,8 @@ const WeddingInfo = () => {
               {/* Nhà Trai */}
               <div className="family-side">
                 <h4 className="family-side-title">Nhà trai</h4>
-                <div className="family-parents">
-                  <p className="parent-name">Nguyễn Chung Tuấn</p>
-                  <p className="parent-name">Trần Thị Lan</p>
-                </div>
+                <p className="parent-name">Nguyễn Chung Tuấn</p>
+                <p className="parent-name">Trần Thị Lan</p>
                 <div className="family-child">
                   <p className="child-label">Chú rể:</p>
                   <p className="child-name">Nguyễn Chung Bảo</p>
@@ -130,12 +128,26 @@ const WeddingInfo = () => {
 
           {/* Venue Information - WIDER */}
           <div className="venue-info-block">
-            <p className="venue-label">Tại:</p>
+            <p className="venue-label">Tiệc cưới được tổ chức tại:</p>
             <h3 className="venue-name-main">TRUNG TÂM TIỆC CƯỚI THE ONE</h3>
-            <p className="venue-detail">Sảnh Saphire - Tầng 2</p>
+            <p className="venue-detail">Sảnh Sapphire - Tầng 2</p>
             <p className="venue-detail">
               Số 2 Chương Dương Độ, Hồng Hà, Hà Nội
             </p>
+          </div>
+
+          {/* Google Maps Embed */}
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.8383123456338!2d105.85639387525669!3d21.02852958062073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab0dfc6aa027%3A0xfaddf9cc7059a801!2sThe%20One%20Hanoi%20Wedding%20and%20Convention%20Centre!5e1!3m2!1svi!2s!4v1763308313093!5m2!1svi!2s"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Wedding Venue Location"
+            ></iframe>
           </div>
 
           <a

@@ -45,9 +45,11 @@ const CoupleIntro = () => {
       </div>
       <div className="container">
         <h2 className="section-title">Cô Dâu & Chú Rể</h2>
-        <p className="section-subtitle">Hai người, một câu chuyện tình yêu</p>
+        <p className="section-subtitle">
+          Hai con người, một câu chuyện tình yêu
+        </p>
 
-        {/* Bride Section - 4 PHOTOS */}
+        {/* Bride Section - 1 PHOTO */}
         <div
           className={`person-section bride-section animate-section ${
             visibleSections.includes(0) ? "visible" : ""
@@ -61,23 +63,14 @@ const CoupleIntro = () => {
             <p className="person-name">Nguyễn Ngọc Minh Phương</p>
           </div>
 
-          <div className="person-gallery">
+          <div className="person-gallery person-gallery-single">
             <div className="gallery-item">
-              <img src="/images/bride-1.jpg" alt="Minh Phương 1" />
-            </div>
-            <div className="gallery-item">
-              <img src="/images/bride-2.jpg" alt="Minh Phương 2" />
-            </div>
-            <div className="gallery-item">
-              <img src="/images/bride-3.jpg" alt="Minh Phương 3" />
-            </div>
-            <div className="gallery-item">
-              <img src="/images/bride-4.jpg" alt="Minh Phương 4" />
+              <img src="/images/bride-1.jpg" alt="Minh Phương" />
             </div>
           </div>
         </div>
 
-        {/* Groom Section - 1 PHOTO ONLY */}
+        {/* Groom Section - 1 PHOTO */}
         <div
           className={`person-section groom-section animate-section ${
             visibleSections.includes(1) ? "visible" : ""

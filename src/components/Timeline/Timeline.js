@@ -51,19 +51,21 @@ const Timeline = () => {
       icon: "/images/bow.png",
       time: "17:30",
       title: "Đón khách",
-      description: "Checkin với photobooth và gửi lời chúc phúc tới CDCR",
+      description:
+        "Checkin với photobooth và gửi lời chúc phúc tới Cô Dâu - Chú Rể",
     },
     {
       icon: "/images/cake.png",
-      time: "18:30",
+      time: "18:00",
       title: "Lễ thành hôn",
-      description: "Cùng nhau chứng kiến khoảnh khắc thiêng liêng cùng CDCR",
+      description:
+        "Cùng nhau chứng kiến khoảnh khắc thiêng liêng cùng Cô Dâu - Chú Rể",
     },
     {
       icon: "/images/champagne.png",
-      time: "18:45",
+      time: "18:30",
       title: "Khai tiệc",
-      description: "Cùng nhau ăn tiệc và nâng ly chúc mừng CDCR",
+      description: "Cùng nhau ăn tiệc và nâng ly chúc mừng Cô Dâu - Chú Rể",
     },
   ];
 

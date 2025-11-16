@@ -55,7 +55,7 @@ const SaveTheDate = () => {
           <p className="std-subtitle">Save the date</p>
 
           {/* Date */}
-          <h3 className="std-date">09.03.2025</h3>
+          <h3 className="std-date">30.11.2025</h3>
 
           {/* Couple Photo */}
           <div className="std-photo-frame">

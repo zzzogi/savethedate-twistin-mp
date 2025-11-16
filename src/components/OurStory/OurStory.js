@@ -116,7 +116,7 @@ const OurStory = () => {
                 mixBlendMode: "multiply",
               }}
             />
-            <h3 className="timeline-title">Yêu</h3>
+            <h3 className="timeline-title">7 năm gắn bó</h3>
             <p className="timeline-text">
               7 năm bên nhau, cùng vượt qua mọi thử thách. Tình yêu của chúng
               tôi ngày càng lớn mạnh và trưởng thành hơn.
@@ -132,7 +132,7 @@ const OurStory = () => {
                 mixBlendMode: "multiply",
               }}
             />
-            <h3 className="timeline-title">Cưới</h3>
+            <h3 className="timeline-title">Về chung 1 nhà</h3>
             <p className="timeline-text">
               Và giờ đây, chúng tôi sẵn sàng bước vào chương mới - từ người yêu
               thành vợ chồng, xây dựng tổ ấm hạnh phúc.
@@ -147,7 +147,7 @@ const OurStory = () => {
           data-section="2"
           ref={addToRefs}
         >
-          <h3 className="marquee-title">Những Khoảnh Khắc Đáng Nhớ</h3>
+          <h3 className="marquee-title">Our Memories</h3>
 
           <div className="marquee-container">
             <div className="marquee-content">

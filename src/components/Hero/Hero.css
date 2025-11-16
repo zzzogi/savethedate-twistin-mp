@@ -4,7 +4,7 @@
   min-height: 600px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-image: url("/public/images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -19,10 +19,11 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.3) 0%,
-    rgba(157, 117, 92, 0.4) 50%,
-    rgba(0, 0, 0, 0.3) 100%
+    90deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.3) 35%,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0) 100%
   );
   z-index: 1;
 }
@@ -30,71 +31,146 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
   color: white;
-  padding: 20px;
+  padding: 60px;
+}
+
+/* Text on LEFT side - DESKTOP */
+.hero-text-left {
+  max-width: 500px;
+  animation: fadeInLeft 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-greeting {
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  font-weight: 300;
 }
 
 .hero-names {
-  margin-bottom: 60px;
-  animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 40px;
 }
 
 .hero-title {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 25px;
-  font-size: 5.5rem; /* Increased from 4rem */
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.2;
-  text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7);
+  text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.8);
 }
 
 .name-bride,
 .name-groom {
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   position: relative;
+  padding-bottom: 15px;
 }
 
 .name-bride::after,
 .name-groom::after {
   content: "";
   position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 0;
+  left: 0;
   width: 80px;
   height: 3px;
   background: white;
 }
 
 .ampersand {
-  font-size: 3.5rem; /* Increased from 3rem */
+  font-size: 2.8rem;
   font-style: italic;
   opacity: 0.9;
   font-family: Georgia, serif;
-}
-
-.hero-subtitle {
-  animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
-}
-
-.hero-subtitle p {
-  font-size: 1.8rem; /* Increased from 1.5rem */
-  margin-bottom: 20px;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  margin-left: 10px;
 }
 
 .hero-date {
-  font-size: 2.5rem !important; /* Increased from 2rem */
+  font-size: 2.2rem;
   font-weight: 700;
-  letter-spacing: 10px !important;
-  margin-top: 25px;
+  letter-spacing: 8px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
 }
 
-/* Removed scroll indicator styles */
+/* Animation */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ALL CONTENT AT BOTTOM (<1180px) */
+@media (max-width: 1180px) {
+  .hero-section {
+    background-image: url("/public/images/hero-bg-mobile.jpg");
+    justify-content: center;
+    align-items: flex-end; /* Align to bottom */
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+  }
+
+  .hero-content {
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px 30px 60px; /* Extra bottom padding */
+  }
+
+  /* Content block at bottom */
+  .hero-text-left {
+    max-width: 100%;
+    text-align: center;
+    animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hero-greeting {
+    margin-bottom: 25px;
+  }
+
+  .hero-names {
+    margin-bottom: 30px;
+  }
+
+  .hero-title {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name-bride::after,
+  .name-groom::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .ampersand {
+    margin-left: 0;
+  }
+
+  .hero-date {
+    margin-top: 0;
+  }
+}
 
 @keyframes fadeInUp {
   from {
@@ -107,47 +183,102 @@
   }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-section {
-    background-image: url("/public/images/hero-bg-mobile.jpg");
-    background-attachment: scroll;
+/* Tablet adjustments */
+@media (max-width: 968px) {
+  .hero-content {
+    padding: 45px 25px 55px;
+  }
+
+  .hero-greeting {
+    font-size: 1.4rem;
+    margin-bottom: 22px;
+  }
+
+  .hero-names {
+    margin-bottom: 25px;
   }
 
   .hero-title {
-    font-size: 3.5rem;
-    gap: 20px;
+    font-size: 3rem;
   }
 
   .ampersand {
-    font-size: 2.5rem;
-  }
-
-  .hero-subtitle p {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
   }
 
   .hero-date {
-    font-size: 1.8rem !important;
-    letter-spacing: 6px !important;
+    font-size: 1.8rem;
   }
 }
 
-@media (max-width: 480px) {
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll;
+  }
+
+  .hero-content {
+    padding: 40px 20px 50px;
+  }
+
+  .hero-greeting {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .hero-names {
+    margin-bottom: 22px;
+  }
+
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    gap: 12px;
   }
 
   .ampersand {
     font-size: 2rem;
   }
 
-  .hero-subtitle p {
-    font-size: 1.2rem;
+  .hero-date {
+    font-size: 1.6rem;
+    letter-spacing: 6px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 30px 15px 45px;
+  }
+
+  .hero-greeting {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+  }
+
+  .hero-names {
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    gap: 10px;
+  }
+
+  .name-bride::after,
+  .name-groom::after {
+    width: 60px;
+    height: 2px;
+  }
+
+  .ampersand {
+    font-size: 1.6rem;
   }
 
   .hero-date {
-    font-size: 1.5rem !important;
-    letter-spacing: 5px !important;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
   }
 }

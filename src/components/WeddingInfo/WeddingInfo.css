@@ -217,6 +217,20 @@
   opacity: 0.9;
 }
 
+.map-container {
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+}
+
 /* Directions Button */
 .directions-button {
   display: inline-flex;
@@ -460,12 +474,6 @@
   margin-bottom: 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-.family-parents {
-  margin-bottom: 30px;
-  padding-bottom: 25px;
-  border-bottom: 2px solid rgba(157, 117, 92, 0.2);
 }
 
 .parent-name {
