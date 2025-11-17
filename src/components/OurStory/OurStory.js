@@ -74,11 +74,10 @@ const OurStory = () => {
     { src: "/images/school-3.jpg", colSpan: 2, rowSpan: 2 }, // square
     { src: "/images/school-4.jpg", colSpan: 1, rowSpan: 2 }, // portrait
     { src: "/images/school-5.jpg", colSpan: 2, rowSpan: 2 }, // landscape
-    { src: "/images/school-6.jpg", colSpan: 3, rowSpan: 1 }, // square
+    { src: "/images/school-6.jpg", colSpan: 3, rowSpan: 2 }, // square
     { src: "/images/school-7.jpg", colSpan: 1, rowSpan: 2 }, // big
     { src: "/images/school-8.jpg", colSpan: 2, rowSpan: 2 }, // portrait
-    { src: "/images/school-9.jpg", colSpan: 1, rowSpan: 2 }, // landscape
-    { src: "/images/school-10.jpg", colSpan: 1, rowSpan: 2 }, // portrait
+    { src: "/images/school-9.jpg", colSpan: 1, rowSpan: 2 }, // portrait
   ];
 
   const togetherPhotos = [
@@ -126,7 +125,6 @@ const OurStory = () => {
     { src: "/images/wedding-14.jpg", colSpan: 3, rowSpan: 3 },
     { src: "/images/wedding-15.jpg", colSpan: 1, rowSpan: 3 },
     { src: "/images/wedding-16.jpg", colSpan: 1, rowSpan: 2 },
-    { src: "/images/wedding-17.jpg", colSpan: 3, rowSpan: 3 },
   ];
 
   return (
