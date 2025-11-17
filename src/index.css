@@ -18,6 +18,9 @@
   --color-light: #d4b896;
   --color-accent: #c6a582;
   --color-white: #ffffff;
+  --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.1);
+  --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.2);
+  --glass-white: rgba(255, 255, 255, 0.92);
 }
 
 html {
