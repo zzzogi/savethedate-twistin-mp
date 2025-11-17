@@ -110,23 +110,23 @@ const OurStory = () => {
   ];
 
   const weddingPhotos = [
-    { src: "/images/wedding-1.jpg", colSpan: 2, rowSpan: 3 },
+    { src: "/images/wedding-1.jpg", colSpan: 3, rowSpan: 3 },
     { src: "/images/wedding-2.jpg", colSpan: 1, rowSpan: 2 },
     { src: "/images/wedding-3.jpg", colSpan: 1, rowSpan: 2 },
     { src: "/images/wedding-4.jpg", colSpan: 1, rowSpan: 2 },
     { src: "/images/wedding-5.jpg", colSpan: 3, rowSpan: 2 },
-    { src: "/images/wedding-6.jpg", colSpan: 3, rowSpan: 5 },
+    { src: "/images/wedding-6.jpg", colSpan: 2, rowSpan: 3 },
     { src: "/images/wedding-7.jpg", colSpan: 2, rowSpan: 3 },
-    { src: "/images/wedding-8.jpg", colSpan: 1, rowSpan: 3 },
+    { src: "/images/wedding-8.jpg", colSpan: 2, rowSpan: 3 },
     { src: "/images/wedding-9.jpg", colSpan: 1, rowSpan: 2 },
-    { src: "/images/wedding-10.jpg", colSpan: 2, rowSpan: 3 },
-    { src: "/images/wedding-11.jpg", colSpan: 3, rowSpan: 3 },
-    { src: "/images/wedding-12.jpg", colSpan: 2, rowSpan: 2 },
-    { src: "/images/wedding-13.jpg", colSpan: 3, rowSpan: 3 },
-    { src: "/images/wedding-14.jpg", colSpan: 2, rowSpan: 2 },
-    { src: "/images/wedding-15.jpg", colSpan: 1, rowSpan: 3 },
-    { src: "/images/wedding-16.jpg", colSpan: 1, rowSpan: 3 },
-    { src: "/images/wedding-17.jpg", colSpan: 3, rowSpan: 3 },
+    { src: "/images/wedding-10.jpg", colSpan: 1, rowSpan: 3 },
+    { src: "/images/wedding-11.jpg", colSpan: 2, rowSpan: 2 },
+    { src: "/images/wedding-12.jpg", colSpan: 1, rowSpan: 3 },
+    { src: "/images/wedding-13.jpg", colSpan: 2, rowSpan: 3 },
+    { src: "/images/wedding-14.jpg", colSpan: 3, rowSpan: 3 },
+    { src: "/images/wedding-15.jpg", colSpan: 1, rowSpan: 2 },
+    { src: "/images/wedding-16.jpg", colSpan: 3, rowSpan: 3 },
+    { src: "/images/wedding-17.jpg", colSpan: 1, rowSpan: 3 },
   ];
 
   return (
