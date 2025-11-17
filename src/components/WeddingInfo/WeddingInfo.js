@@ -65,7 +65,7 @@ const WeddingInfo = () => {
           </div>
 
           <div className="couple-photo-main">
-            <img src="/images/couple-main.png" alt="Chung Bảo & Minh Phương" />
+            <img src="/images/couple-main.jpg" alt="Chung Bảo & Minh Phương" />
           </div>
         </div>
 
