@@ -10,6 +10,7 @@ import Countdown from "./components/Countdown/Countdown";
 import Footer from "./components/Footer/Footer";
 import SaveTheDate from "./components/SaveTheDate/SaveTheDate";
 import Timeline from "./components/Timeline/Timeline";
+import FloatingButtons from "./components/FloatingButton/FloatingButtons";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <RSVP />
       <Countdown />
       <Footer />
+      <FloatingButtons />
     </div>
   );
 }

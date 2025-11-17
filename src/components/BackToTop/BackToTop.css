@@ -1,0 +1,103 @@
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(198, 165, 130, 0.95) 0%,
+    rgba(157, 117, 92, 0.95) 100%
+  );
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(212, 184, 150, 0.95) 0%,
+    rgba(198, 165, 130, 0.95) 100%
+  );
+}
+
+.back-to-top:active {
+  transform: translateY(-2px);
+}
+
+.back-to-top svg {
+  animation: bounce-arrow 2s infinite;
+}
+
+@keyframes bounce-arrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* ===== POSITIONING WITH MUSIC PLAYER ===== */
+/* When music player is collapsed */
+.music-player-pill.collapsed ~ .back-to-top {
+  bottom: 25px;
+  right: 25px;
+  /* Music player will be at same position, so we need to offset */
+}
+
+/* Adjust position to be ABOVE music player */
+.back-to-top {
+  bottom: 95px; /* Music player height (55px) + gap (40px) */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    bottom: 85px; /* Music player (50px) + gap (35px) */
+    right: 20px;
+  }
+
+  .back-to-top svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-to-top {
+    width: 48px;
+    height: 48px;
+    bottom: 78px; /* Music player (48px) + gap (30px) */
+    right: 15px;
+  }
+
+  .back-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -313,13 +313,13 @@ const RSVP = () => {
                   <strong>Địa điểm:</strong> Trung Tâm Tiệc Cưới The One
                 </p>
                 <p className="venue-address">
-                  Sảnh Saphire - Tầng 2<br />
+                  Sảnh Sapphire - Tầng 2<br />
                   Số 2 Chương Dương Độ, Hà Nội
                 </p>
               </div>
 
               <p className="invitation-footer">
-                Sự hiện diện của bạn là niềm vinh hạnh của chúng tôi!
+                Sự hiện diện của bạn là vinh hạnh của chúng tôi!
               </p>
             </div>
           </div>

@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
-import "./WeddingInfo.css";
+import { useEffect, useRef, useState } from "react";
 import Divider from "../Divider/Divider";
-import Icon from "../Icon/Icon";
+import "./WeddingInfo.css";
 
 const WeddingInfo = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -149,22 +148,6 @@ const WeddingInfo = () => {
               title="Wedding Venue Location"
             ></iframe>
           </div>
-
-          <a
-            href="https://maps.google.com/?q=The+One+Hanoi+Wedding+and+Convention+Centre"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="directions-button"
-          >
-            <span className="button-icon">
-              <Icon
-                src="/images/location-pin.png"
-                alt="Map Icon"
-                size="medium"
-              />
-            </span>
-            Chỉ Đường
-          </a>
         </div>
       </div>
     </section>

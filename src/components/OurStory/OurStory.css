@@ -3,7 +3,7 @@
   background: white;
   position: relative;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 
 .story-background {
@@ -77,6 +77,7 @@
   color: var(--color-dark);
   line-height: 1.8;
   opacity: 0.95;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .story-block {
@@ -441,7 +442,7 @@
   }
 
   .masonry-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    grid-template-columns: repeat(3, 1fr); /* 2 columns on mobile */
     grid-auto-rows: 120px;
     gap: 12px;
   }
@@ -482,11 +483,6 @@
 
   .polaroid-card.landscape {
     width: 290px;
-  }
-
-  .masonry-grid {
-    grid-auto-rows: 100px;
-    gap: 10px;
   }
 
   .proposal-content {

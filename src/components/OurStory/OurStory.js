@@ -69,14 +69,14 @@ const OurStory = () => {
   ];
 
   const schoolMemories = [
-    { src: "/images/school-1.jpg", colSpan: 3, rowSpan: 2 }, // landscape
-    { src: "/images/school-2.jpg", colSpan: 2, rowSpan: 3 }, // portrait
+    { src: "/images/school-1.jpg", colSpan: 2, rowSpan: 1 }, // landscape
+    { src: "/images/school-2.jpg", colSpan: 1, rowSpan: 1 }, // portrait
     { src: "/images/school-3.jpg", colSpan: 2, rowSpan: 2 }, // square
     { src: "/images/school-4.jpg", colSpan: 1, rowSpan: 2 }, // portrait
     { src: "/images/school-5.jpg", colSpan: 2, rowSpan: 2 }, // landscape
-    { src: "/images/school-6.jpg", colSpan: 3, rowSpan: 2 }, // square
-    { src: "/images/school-7.jpg", colSpan: 1, rowSpan: 2 }, // big
-    { src: "/images/school-8.jpg", colSpan: 2, rowSpan: 2 }, // portrait
+    { src: "/images/school-6.jpg", colSpan: 2, rowSpan: 1 }, // square
+    { src: "/images/school-7.jpg", colSpan: 1, rowSpan: 1 }, // big
+    { src: "/images/school-8.jpg", colSpan: 3, rowSpan: 2 }, // portrait
     { src: "/images/school-9.jpg", colSpan: 1, rowSpan: 2 }, // portrait
   ];
 
@@ -93,7 +93,7 @@ const OurStory = () => {
     },
     {
       src: "/images/together-3.jpg",
-      caption: "Kỉ niệm du lịch Huế",
+      caption: "Kỉ niệm du lịch Hội An",
       orientation: "portrait",
     },
     {
@@ -109,20 +109,20 @@ const OurStory = () => {
   ];
 
   const weddingPhotos = [
-    { src: "/images/wedding-1.jpg", colSpan: 3, rowSpan: 3 },
+    { src: "/images/wedding-1.jpg", colSpan: 2, rowSpan: 2 },
     { src: "/images/wedding-2.jpg", colSpan: 1, rowSpan: 2 },
     { src: "/images/wedding-3.jpg", colSpan: 1, rowSpan: 2 },
     { src: "/images/wedding-4.jpg", colSpan: 1, rowSpan: 2 },
-    { src: "/images/wedding-5.jpg", colSpan: 3, rowSpan: 2 },
-    { src: "/images/wedding-6.jpg", colSpan: 2, rowSpan: 3 },
+    { src: "/images/wedding-5.jpg", colSpan: 2, rowSpan: 1 },
+    { src: "/images/wedding-6.jpg", colSpan: 1, rowSpan: 2 },
     { src: "/images/wedding-7.jpg", colSpan: 2, rowSpan: 3 },
-    { src: "/images/wedding-8.jpg", colSpan: 2, rowSpan: 3 },
+    { src: "/images/wedding-8.jpg", colSpan: 1, rowSpan: 2 },
     { src: "/images/wedding-9.jpg", colSpan: 1, rowSpan: 2 },
     { src: "/images/wedding-10.jpg", colSpan: 1, rowSpan: 3 },
     { src: "/images/wedding-11.jpg", colSpan: 2, rowSpan: 2 },
     { src: "/images/wedding-12.jpg", colSpan: 1, rowSpan: 3 },
     { src: "/images/wedding-13.jpg", colSpan: 2, rowSpan: 2 },
-    { src: "/images/wedding-14.jpg", colSpan: 3, rowSpan: 3 },
+    { src: "/images/wedding-14.jpg", colSpan: 1, rowSpan: 1 },
     { src: "/images/wedding-15.jpg", colSpan: 1, rowSpan: 3 },
     { src: "/images/wedding-16.jpg", colSpan: 1, rowSpan: 2 },
   ];
@@ -161,8 +161,10 @@ const OurStory = () => {
             />
             <h3 className="timeline-title-story">Gặp Gỡ</h3>
             <p className="timeline-text-story">
-              Chúng tôi gặp nhau lần đầu tại THPT Trần Phú - Hoàn Kiếm năm 2018.
-              Hai con người trẻ tuổi với đam mê nghệ thuật đã tìm thấy nhau.
+              Chúng mình gặp nhau lần đầu vào ngày nhập học lớp 10D1, trường
+              THPT Trần Phú – Hoàn Kiếm. Nhưng phải đến học kỳ 2 lớp 11, khi cô
+              chủ nhiệm xếp ngồi cạnh nhau, chúng mình mới thật sự bắt đầu trò
+              chuyện và trở nên thân thiết.
             </p>
           </div>
 
@@ -175,8 +177,11 @@ const OurStory = () => {
             />
             <h3 className="timeline-title-story">7 năm gắn bó</h3>
             <p className="timeline-text-story">
-              7 năm bên nhau, cùng vượt qua mọi thử thách. Tình yêu của chúng
-              tôi ngày càng lớn mạnh và trưởng thành hơn.
+              Mùa hè năm lớp 11, chúng mình nhắn tin mỗi ngày và tình cảm lớn
+              dần. Đến ngày 5/10/2018 – cuộc hẹn đầu tiên, chúng mình chính thức
+              ngỏ lời thích nhau. Suốt những năm sau đó, từ đại học đến đi làm,
+              cả hai luôn đồng hành, sẻ chia và cùng nhau trưởng thành qua nhiều
+              kỷ niệm đẹp.
             </p>
           </div>
 
@@ -189,8 +194,11 @@ const OurStory = () => {
             />
             <h3 className="timeline-title-story">Về chung 1 nhà</h3>
             <p className="timeline-text-story">
-              Và giờ đây, chúng tôi sẵn sàng bước vào chương mới - từ người yêu
-              thành vợ chồng, xây dựng tổ ấm hạnh phúc.
+              Khi cả hai đã sẵn sàng và nhận được sự ủng hộ của gia đình, chúng
+              mình quyết định gắn bó trọn đời. Từ hai người bạn cùng bàn thành
+              vợ chồng, về chung một nhà sau buổi cầu hôn lãng mạn đúng kỷ niệm
+              7 năm. Dù tương lai có thử thách, chúng mình tin "thuận vợ thuận
+              chồng, tát biển Đông cũng cạn".
             </p>
           </div>
         </div>
