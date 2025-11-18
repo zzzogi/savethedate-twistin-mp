@@ -11,6 +11,8 @@ import Footer from "./components/Footer/Footer";
 import SaveTheDate from "./components/SaveTheDate/SaveTheDate";
 import Timeline from "./components/Timeline/Timeline";
 import FloatingButtons from "./components/FloatingButton/FloatingButtons";
+import MV from "./components/MV/MV";
+import Testimonial from "./components/Testimonial/Testimonial";
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
       <Timeline />
       <CoupleIntro />
       <OurStory />
+      <MV />
       <Gallery />
       <RSVP />
+      <Testimonial />
       <Countdown />
       <Footer />
       <FloatingButtons />
