@@ -21,13 +21,13 @@ function App() {
       <SaveTheDate />
       <WeddingInfo />
       <Timeline />
+      <RSVP />
+      <Countdown />
       <CoupleIntro />
       <OurStory />
       <MV />
       <Gallery />
-      <RSVP />
       <Testimonial />
-      <Countdown />
       <Footer />
       <FloatingButtons />
     </div>

@@ -50,43 +50,45 @@ const CoupleIntro = () => {
         </p>
 
         {/* Bride Section - 1 PHOTO */}
-        <div
-          className={`person-section bride-section animate-section ${
-            visibleSections.includes(0) ? "visible" : ""
-          }`}
-          data-section="0"
-          ref={addToRefs}
-        >
-          <Divider logo="/images/bride.png" logoSize="extra-large" />
-          <div className="person-header">
-            <h3 className="person-title">Cô Dâu</h3>
-            <p className="person-name">Nguyễn Ngọc Minh Phương</p>
-          </div>
+        <div className="couple-sections-wrapper">
+          <div
+            className={`person-section bride-section animate-section ${
+              visibleSections.includes(0) ? "visible" : ""
+            }`}
+            data-section="0"
+            ref={addToRefs}
+          >
+            <Divider logo="/images/bride.png" logoSize="extra-large" />
+            <div className="person-header">
+              <h3 className="person-title">Cô Dâu</h3>
+              <p className="person-name">Nguyễn Ngọc Minh Phương</p>
+            </div>
 
-          <div className="person-gallery person-gallery-single">
-            <div className="gallery-item">
-              <img src="/images/bride-1.jpg" alt="Minh Phương" />
+            <div className="person-gallery person-gallery-single">
+              <div className="gallery-item">
+                <img src="/images/bride-1.jpg" alt="Minh Phương" />
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Groom Section - 1 PHOTO */}
-        <div
-          className={`person-section groom-section animate-section ${
-            visibleSections.includes(1) ? "visible" : ""
-          }`}
-          data-section="1"
-          ref={addToRefs}
-        >
-          <Divider logo="/images/groom.png" logoSize="extra-large" />
-          <div className="person-header">
-            <h3 className="person-title">Chú Rể</h3>
-            <p className="person-name">Nguyễn Chung Bảo</p>
-          </div>
+          {/* Groom Section - 1 PHOTO */}
+          <div
+            className={`person-section groom-section animate-section ${
+              visibleSections.includes(1) ? "visible" : ""
+            }`}
+            data-section="1"
+            ref={addToRefs}
+          >
+            <Divider logo="/images/groom.png" logoSize="extra-large" />
+            <div className="person-header">
+              <h3 className="person-title">Chú Rể</h3>
+              <p className="person-name">Nguyễn Chung Bảo</p>
+            </div>
 
-          <div className="person-gallery person-gallery-single">
-            <div className="gallery-item">
-              <img src="/images/groom-1.jpg" alt="Chung Bảo" />
+            <div className="person-gallery person-gallery-single">
+              <div className="gallery-item">
+                <img src="/images/groom-1.jpg" alt="Chung Bảo" />
+              </div>
             </div>
           </div>
         </div>

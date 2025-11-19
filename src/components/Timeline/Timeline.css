@@ -29,7 +29,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
   padding: 60px 20px;
   display: flex;
   align-items: flex-end;
@@ -38,10 +38,9 @@
 
 .timeline-hero-title {
   font-size: 5rem;
-  font-weight: 900;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 12px;
   text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
 }
 

@@ -130,14 +130,6 @@ const Timeline = () => {
           </div>
         </div>
       </div>
-
-      {/* Closing Illustration - SMALLER */}
-      <div className="timeline-illustration">
-        <img
-          src="/images/timeline-illustration.png"
-          alt="Wedding Illustration"
-        />
-      </div>
     </section>
   );
 };

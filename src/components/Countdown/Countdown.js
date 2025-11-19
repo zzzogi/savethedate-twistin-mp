@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Countdown.css";
+import Divider from "../Divider/Divider";
 
 const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -119,6 +120,7 @@ const Countdown = () => {
           </div>
         </div>
       </div>
+      <Divider logo="/images/leaf-1.png" logoSize="extra-large" />
     </section>
   );
 };
