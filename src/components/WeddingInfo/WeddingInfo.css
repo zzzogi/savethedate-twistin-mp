@@ -386,12 +386,12 @@
 
   .invitation-title,
   .ceremony-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .groom-name,
   .bride-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
   }
 
@@ -427,7 +427,7 @@
   }
 
   .venue-name-main {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
   }
 
@@ -521,18 +521,6 @@
   .family-side-title {
     font-size: 1.6rem;
   }
-
-  .parent-name {
-    font-size: 1.2rem;
-  }
-
-  .child-label {
-    font-size: 1rem;
-  }
-
-  .child-name {
-    font-size: 1.3rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -551,17 +539,5 @@
   .family-side-title {
     font-size: 1.4rem;
     margin-bottom: 20px;
-  }
-
-  .parent-name {
-    font-size: 1.1rem;
-  }
-
-  .child-label {
-    font-size: 0.95rem;
-  }
-
-  .child-name {
-    font-size: 1.2rem;
   }
 }
