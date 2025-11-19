@@ -126,7 +126,7 @@
 
 @media (max-width: 480px) {
   .countdown-section {
-    padding: 60px 15px;
+    padding: 60px 15px 0px 15px;
   }
 
   .countdown-section .section-subtitle {
