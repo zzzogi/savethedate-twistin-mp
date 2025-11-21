@@ -333,6 +333,8 @@ const OurStory = () => {
                 alt="Wedding"
                 width={1080}
                 height={1621}
+                sizes="(max-width: 600px) 100vw, 50vw"
+                srcSet="/images/wedding-photo-480.webp 480w, /images/wedding-photo-800.webp 800w, /images/wedding-photo.webp 1080w"
               />
               <div className="photo-label">Ảnh cưới 2025</div>
             </div>

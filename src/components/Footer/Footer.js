@@ -19,8 +19,26 @@ const Footer = () => {
           <div className="footer-bottom">
             <p className="footer-date">30 • 11 • 2025</p>
             <p className="copyright">
-              © {new Date().getFullYear()} Chung Bảo & Minh Phương. Made by
-              Quyền Bùi.
+              © {new Date().getFullYear()} Chung Bảo & Minh Phương.
+            </p>
+            <p
+              className="copyright"
+              style={{
+                marginTop: "8px",
+              }}
+            >
+              Made by{" "}
+              <a
+                href="https://www.facebook.com/buiv1etquyen/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                }}
+              >
+                Quyền Bùi
+              </a>
             </p>
           </div>
         </div>
