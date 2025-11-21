@@ -76,13 +76,13 @@ const Timeline = () => {
         <picture>
           <source
             media="(min-width: 769px)"
-            srcSet="/images/timeline-hero-desktop.jpg"
+            srcSet="/images/timeline-hero-desktop.webp"
           />
           <source
             media="(max-width: 768px)"
-            srcSet="/images/timeline-hero-mobile.jpg"
+            srcSet="/images/timeline-hero-mobile.webp"
           />
-          <img src="/images/timeline-hero-desktop.jpg" alt="Timeline" />
+          <img src="/images/timeline-hero-desktop.webp" alt="Timeline" />
         </picture>
         <div className="timeline-hero-overlay">
           <h2 className="timeline-hero-title">Timeline</h2>

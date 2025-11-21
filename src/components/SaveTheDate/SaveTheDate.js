@@ -37,7 +37,14 @@ const SaveTheDate = () => {
     <section className="save-the-date-section section">
       {/* Large background decoration */}
       <div className="bg-decor-large">
-        <img src="/images/large-floral.png" alt="" />
+        <img
+          src="/images/large-floral.png"
+          alt="Large Floral Decoration"
+          loading="lazy"
+          style={{
+            mixBlendMode: "darken",
+          }}
+        />
       </div>
 
       <div className="container">
@@ -60,8 +67,10 @@ const SaveTheDate = () => {
           {/* Couple Photo */}
           <div className="std-photo-frame">
             <img
-              src="/images/save-the-date-couple.jpg"
+              src="/images/save-the-date-couple.webp"
               alt="Chung Bảo & Minh Phương"
+              width={1080}
+              height={1620}
             />
           </div>
         </div>

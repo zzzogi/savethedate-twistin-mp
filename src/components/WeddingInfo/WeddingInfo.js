@@ -64,7 +64,12 @@ const WeddingInfo = () => {
           </div>
 
           <div className="couple-photo-main">
-            <img src="/images/couple-main.jpg" alt="Chung Bảo & Minh Phương" />
+            <img
+              src="/images/couple-main.webp"
+              alt="Chung Bảo & Minh Phương"
+              width={1080}
+              height={1620}
+            />
           </div>
         </div>
 
@@ -99,7 +104,7 @@ const WeddingInfo = () => {
             <div className="family-grid">
               {/* Nhà Trai */}
               <div className="family-side">
-                <h4 className="family-side-title">Nhà trai</h4>
+                <h1 className="family-side-title">Nhà trai</h1>
                 <p className="parent-name">Nguyễn Chung Tuấn</p>
                 <p className="parent-name">Trần Thị Lan</p>
                 <div className="family-child">
@@ -110,7 +115,7 @@ const WeddingInfo = () => {
 
               {/* Nhà Gái */}
               <div className="family-side">
-                <h4 className="family-side-title">Nhà gái</h4>
+                <h1 className="family-side-title">Nhà gái</h1>
                 <div className="family-parents">
                   <p className="parent-name">Nguyễn Ngọc Dũng</p>
                   <p className="parent-name">Nguyễn Thị Phương Anh</p>
@@ -123,7 +128,12 @@ const WeddingInfo = () => {
             </div>
           </div>
 
-          <Divider logoSize="large" logo="/images/ring.png" />
+          <Divider
+            logoSize="large"
+            logo="/images/ring.png"
+            width={561}
+            height={445}
+          />
 
           {/* Venue Information - WIDER */}
           <div className="venue-info-block">

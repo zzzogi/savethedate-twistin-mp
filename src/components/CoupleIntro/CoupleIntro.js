@@ -58,7 +58,12 @@ const CoupleIntro = () => {
             data-section="0"
             ref={addToRefs}
           >
-            <Divider logo="/images/bride.png" logoSize="extra-large" />
+            <Divider
+              logo="/images/bride.png"
+              logoSize="extra-large"
+              width={542}
+              height={307}
+            />
             <div className="person-header">
               <h3 className="person-title">Cô Dâu</h3>
               <p className="person-name">Nguyễn Ngọc Minh Phương</p>
@@ -66,7 +71,7 @@ const CoupleIntro = () => {
 
             <div className="person-gallery person-gallery-single">
               <div className="gallery-item">
-                <img src="/images/bride-1.jpg" alt="Minh Phương" />
+                <img src="/images/bride-1.webp" alt="Minh Phương" />
               </div>
             </div>
           </div>
@@ -79,7 +84,12 @@ const CoupleIntro = () => {
             data-section="1"
             ref={addToRefs}
           >
-            <Divider logo="/images/groom.png" logoSize="extra-large" />
+            <Divider
+              logo="/images/groom.png"
+              logoSize="extra-large"
+              width={223}
+              height={413}
+            />
             <div className="person-header">
               <h3 className="person-title">Chú Rể</h3>
               <p className="person-name">Nguyễn Chung Bảo</p>
@@ -87,7 +97,7 @@ const CoupleIntro = () => {
 
             <div className="person-gallery person-gallery-single">
               <div className="gallery-item">
-                <img src="/images/groom-1.jpg" alt="Chung Bảo" />
+                <img src="/images/groom-1.webp" alt="Chung Bảo" />
               </div>
             </div>
           </div>

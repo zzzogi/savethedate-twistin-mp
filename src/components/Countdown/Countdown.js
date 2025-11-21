@@ -120,7 +120,12 @@ const Countdown = () => {
           </div>
         </div>
       </div>
-      <Divider logo="/images/leaf-1.png" logoSize="extra-large" />
+      <Divider
+        logo="/images/leaf-1.png"
+        logoSize="extra-large"
+        width={500}
+        height={500}
+      />
     </section>
   );
 };

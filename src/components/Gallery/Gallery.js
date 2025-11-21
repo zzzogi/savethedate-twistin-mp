@@ -9,11 +9,11 @@ const Gallery = () => {
 
   // Only 5 landscape images
   const galleryImages = [
-    "/images/gallery-1.jpg",
-    "/images/gallery-2.jpg",
-    "/images/gallery-3.jpg",
-    "/images/gallery-4.jpg",
-    "/images/gallery-5.jpg",
+    "/images/gallery-1.webp",
+    "/images/gallery-2.webp",
+    "/images/gallery-3.webp",
+    "/images/gallery-4.webp",
+    "/images/gallery-5.webp",
   ];
 
   useEffect(() => {
@@ -67,10 +67,10 @@ const Gallery = () => {
     <section className="gallery-section section">
       {/* Background decorations */}
       <div className="bg-decor bg-decor-9">
-        <img src="/wedding-elements/element-9.png" alt="" />
+        <img src="/images/flower-1.png" alt="Flower 1" />
       </div>
       <div className="bg-decor bg-decor-10">
-        <img src="/wedding-elements/element-10.png" alt="" />
+        <img src="/images/flower-2.png" alt="Flower 2" />
       </div>
 
       <div className="container">

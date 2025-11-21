@@ -71,11 +71,17 @@ const Testimonial = () => {
   return (
     <section className="testimonial section" id="testimonial">
       <div className="container">
-        <h2 className="section-title">Lời Chúc</h2>
+        <h1 className="section-title">Lời Chúc</h1>
         <p className="section-subtitle">Từ Những Người Thân Yêu</p>
 
         <div className="testimonial-carousel">
-          <button className="carousel-btn prev" onClick={prevSlide}>
+          <button
+            className="carousel-btn prev"
+            onClick={prevSlide}
+            aria-label="Previous"
+            aria-labelledby="Previous testimonials"
+            title={"Previous testimonials"}
+          >
             <FaChevronLeft />
           </button>
 
@@ -88,7 +94,7 @@ const Testimonial = () => {
                 </div>
                 <p className="testimonial-message">{testimonial.message}</p>
                 <div className="testimonial-author">
-                  <h4>{testimonial.name}</h4>
+                  <h2>{testimonial.name}</h2>
                   <p>{testimonial.relationship}</p>
                 </div>
                 <FaHeart className="heart-icon" />

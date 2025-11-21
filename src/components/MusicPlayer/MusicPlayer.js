@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import "./MusicPlayer.css";
 
 const MusicPlayer = () => {
@@ -110,16 +110,6 @@ const MusicPlayer = () => {
         loop
         preload="auto"
       />
-
-      {/* Autoplay notification (if blocked) */}
-      {autoplayBlocked && (
-        <div className="autoplay-notice">
-          <span className="notice-icon">🎵</span>
-          <span className="notice-text">
-            Phát nhạc để có trải nghiệm tốt nhất
-          </span>
-        </div>
-      )}
 
       {/* Pill-Shaped Floating Player */}
       <div

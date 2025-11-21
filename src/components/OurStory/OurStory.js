@@ -37,94 +37,94 @@ const OurStory = () => {
   // Data arrays with row/col span options
   const earlyYearsPhotos = [
     {
-      src: "/images/early-1.jpg",
+      src: "/images/early-1.webp",
       caption: "Đôi tình nhân cùng tiến",
       orientation: "landscape",
     },
     {
-      src: "/images/early-2.jpg",
+      src: "/images/early-2.webp",
       caption: "Bảo làm tóc 🦔",
       orientation: "portrait",
     },
     {
-      src: "/images/early-3.jpg",
+      src: "/images/early-3.webp",
       caption: "Chu choe nè 😙",
       orientation: "portrait",
     },
     {
-      src: "/images/early-4.jpg",
+      src: "/images/early-4.webp",
       caption: "Lượn lờ Hồ Tây",
       orientation: "landscape",
     },
     {
-      src: "/images/early-5.jpg",
+      src: "/images/early-5.webp",
       caption: "Bảo vẽ tặng Phương",
       orientation: "portrait",
     },
     {
-      src: "/images/early-6.jpg",
+      src: "/images/early-6.webp",
       caption: "Ngày đầu đi date",
       orientation: "portrait",
     },
   ];
 
   const schoolMemories = [
-    { src: "/images/school-1.jpg", colSpan: 2, rowSpan: 1 }, // landscape
-    { src: "/images/school-2.jpg", colSpan: 1, rowSpan: 1 }, // portrait
-    { src: "/images/school-3.jpg", colSpan: 2, rowSpan: 2 }, // square
-    { src: "/images/school-4.jpg", colSpan: 1, rowSpan: 2 }, // portrait
-    { src: "/images/school-5.jpg", colSpan: 2, rowSpan: 2 }, // landscape
-    { src: "/images/school-6.jpg", colSpan: 2, rowSpan: 1 }, // square
-    { src: "/images/school-7.jpg", colSpan: 1, rowSpan: 1 }, // big
-    { src: "/images/school-8.jpg", colSpan: 3, rowSpan: 2 }, // portrait
-    { src: "/images/school-9.jpg", colSpan: 1, rowSpan: 2 }, // portrait
+    { src: "/images/school-1.webp", colSpan: 2, rowSpan: 1 }, // landscape
+    { src: "/images/school-2.webp", colSpan: 1, rowSpan: 1 }, // portrait
+    { src: "/images/school-3.webp", colSpan: 2, rowSpan: 2 }, // square
+    { src: "/images/school-4.webp", colSpan: 1, rowSpan: 2 }, // portrait
+    { src: "/images/school-5.webp", colSpan: 2, rowSpan: 2 }, // landscape
+    { src: "/images/school-6.webp", colSpan: 2, rowSpan: 1 }, // square
+    { src: "/images/school-7.webp", colSpan: 1, rowSpan: 1 }, // big
+    { src: "/images/school-8.webp", colSpan: 3, rowSpan: 2 }, // portrait
+    { src: "/images/school-9.webp", colSpan: 1, rowSpan: 2 }, // portrait
   ];
 
   const togetherPhotos = [
     {
-      src: "/images/together-1.jpg",
+      src: "/images/together-1.webp",
       caption: "Chuyến đi chơi cùng nhau",
       orientation: "landscape",
     },
     {
-      src: "/images/together-2.jpg",
+      src: "/images/together-2.webp",
       caption: "Đi chơi đêm trong tiết trời lạnh",
       orientation: "landscape",
     },
     {
-      src: "/images/together-3.jpg",
+      src: "/images/together-3.webp",
       caption: "Kỉ niệm du lịch Hội An",
       orientation: "portrait",
     },
     {
-      src: "/images/together-4.jpg",
+      src: "/images/together-4.webp",
       caption: "Chống chọi với đại dịch COVID-19",
       orientation: "portrait",
     },
     {
-      src: "/images/together-5.jpg",
+      src: "/images/together-5.webp",
       caption: "Cuộc chơi nào cũng có nhau",
       orientation: "portrait",
     },
   ];
 
   const weddingPhotos = [
-    { src: "/images/wedding-1.jpg", colSpan: 2, rowSpan: 2 },
-    { src: "/images/wedding-2.jpg", colSpan: 1, rowSpan: 2 },
-    { src: "/images/wedding-3.jpg", colSpan: 1, rowSpan: 2 },
-    { src: "/images/wedding-4.jpg", colSpan: 1, rowSpan: 2 },
-    { src: "/images/wedding-5.jpg", colSpan: 2, rowSpan: 1 },
-    { src: "/images/wedding-6.jpg", colSpan: 1, rowSpan: 2 },
-    { src: "/images/wedding-7.jpg", colSpan: 2, rowSpan: 3 },
-    { src: "/images/wedding-8.jpg", colSpan: 1, rowSpan: 2 },
-    { src: "/images/wedding-9.jpg", colSpan: 1, rowSpan: 2 },
-    { src: "/images/wedding-10.jpg", colSpan: 1, rowSpan: 3 },
-    { src: "/images/wedding-11.jpg", colSpan: 2, rowSpan: 2 },
-    { src: "/images/wedding-12.jpg", colSpan: 1, rowSpan: 3 },
-    { src: "/images/wedding-13.jpg", colSpan: 2, rowSpan: 2 },
-    { src: "/images/wedding-14.jpg", colSpan: 1, rowSpan: 1 },
-    { src: "/images/wedding-15.jpg", colSpan: 1, rowSpan: 3 },
-    { src: "/images/wedding-16.jpg", colSpan: 1, rowSpan: 2 },
+    { src: "/images/wedding-1.webp", colSpan: 2, rowSpan: 2 },
+    { src: "/images/wedding-2.webp", colSpan: 1, rowSpan: 2 },
+    { src: "/images/wedding-3.webp", colSpan: 1, rowSpan: 2 },
+    { src: "/images/wedding-4.webp", colSpan: 1, rowSpan: 2 },
+    { src: "/images/wedding-5.webp", colSpan: 2, rowSpan: 1 },
+    { src: "/images/wedding-6.webp", colSpan: 1, rowSpan: 2 },
+    { src: "/images/wedding-7.webp", colSpan: 2, rowSpan: 3 },
+    { src: "/images/wedding-8.webp", colSpan: 1, rowSpan: 2 },
+    { src: "/images/wedding-9.webp", colSpan: 1, rowSpan: 2 },
+    { src: "/images/wedding-10.webp", colSpan: 1, rowSpan: 3 },
+    { src: "/images/wedding-11.webp", colSpan: 2, rowSpan: 2 },
+    { src: "/images/wedding-12.webp", colSpan: 1, rowSpan: 3 },
+    { src: "/images/wedding-13.webp", colSpan: 2, rowSpan: 2 },
+    { src: "/images/wedding-14.webp", colSpan: 1, rowSpan: 1 },
+    { src: "/images/wedding-15.webp", colSpan: 1, rowSpan: 3 },
+    { src: "/images/wedding-16.webp", colSpan: 1, rowSpan: 2 },
   ];
 
   return (
@@ -154,7 +154,7 @@ const OurStory = () => {
         >
           <div className="timeline-item-story">
             <Icon
-              src="/images/meeting.jpg"
+              src="/images/meeting.webp"
               alt="Meeting Icon"
               size="xxl"
               style={{ mixBlendMode: "multiply" }}
@@ -170,7 +170,7 @@ const OurStory = () => {
 
           <div className="timeline-item-story">
             <Icon
-              src="/images/lover.jpg"
+              src="/images/lover.webp"
               alt="Love Icon"
               size="xxl"
               style={{ mixBlendMode: "multiply" }}
@@ -313,7 +313,12 @@ const OurStory = () => {
 
           <div className="comparison-container">
             <div className="comparison-photo">
-              <img src="/images/yearbook-photo.jpg" alt="Yearbook" />
+              <img
+                src="/images/yearbook-photo.webp"
+                alt="Yearbook"
+                width={798}
+                height={1168}
+              />
               <div className="photo-label">Kỉ yếu 2019</div>
             </div>
 
@@ -323,7 +328,12 @@ const OurStory = () => {
             </div>
 
             <div className="comparison-photo">
-              <img src="/images/wedding-photo.jpg" alt="Wedding" />
+              <img
+                src="/images/wedding-photo.webp"
+                alt="Wedding"
+                width={1080}
+                height={1621}
+              />
               <div className="photo-label">Ảnh cưới 2025</div>
             </div>
           </div>
@@ -344,7 +354,12 @@ const OurStory = () => {
 
           <div className="proposal-content">
             <div className="proposal-image">
-              <img src="/images/proposal.jpg" alt="Proposal" />
+              <img
+                src="/images/proposal.webp"
+                alt="Proposal"
+                width={640}
+                height={853}
+              />
             </div>
             <div className="proposal-text">
               <p className="proposal-quote">"Làm vợ anh nhé?"</p>

@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-image: url("/public/images/hero-bg.jpg");
+  background-image: url("/public/images/hero-bg.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -117,7 +117,7 @@
 /* ALL CONTENT AT BOTTOM (<1180px) */
 @media (max-width: 1180px) {
   .hero-section {
-    background-image: url("/public/images/hero-bg-mobile.jpg");
+    background-image: url("/public/images/hero-bg-mobile.webp");
     justify-content: center;
     align-items: flex-end; /* Align to bottom */
   }

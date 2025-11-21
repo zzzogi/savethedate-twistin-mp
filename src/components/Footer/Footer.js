@@ -1,6 +1,5 @@
-import React from "react";
-import "./Footer.css";
 import Icon from "../Icon/Icon";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -19,7 +18,10 @@ const Footer = () => {
 
           <div className="footer-bottom">
             <p className="footer-date">30 • 11 • 2025</p>
-            <p className="copyright">© 2025 Chung Bảo & Minh Phương</p>
+            <p className="copyright">
+              © {new Date().getFullYear()} Chung Bảo & Minh Phương. Made by
+              Quyền Bùi.
+            </p>
           </div>
         </div>
       </div>
