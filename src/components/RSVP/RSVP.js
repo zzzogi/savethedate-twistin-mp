@@ -231,24 +231,24 @@ const RSVP = () => {
                   <input
                     type="radio"
                     name="guestOf"
-                    value="Chung Bảo"
-                    checked={formData.guestOf === "Chung Bảo"}
+                    value="Nhà trai"
+                    checked={formData.guestOf === "Nhà trai"}
                     onChange={handleChange}
                     required
                     disabled={isSubmitting}
                   />
-                  <span>Chung Bảo</span>
+                  <span>Nhà trai</span>
                 </label>
                 <label className="radio-label">
                   <input
                     type="radio"
                     name="guestOf"
-                    value="Minh Phương"
-                    checked={formData.guestOf === "Minh Phương"}
+                    value="Nhà gái"
+                    checked={formData.guestOf === "Nhà gái"}
                     onChange={handleChange}
                     disabled={isSubmitting}
                   />
-                  <span>Minh Phương</span>
+                  <span>Nhà gái</span>
                 </label>
               </div>
             </div>

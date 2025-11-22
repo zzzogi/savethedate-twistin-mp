@@ -276,59 +276,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Volume Control */
-.pill-volume {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.pill-volume-icon {
-  background: none;
-  border: none;
-  font-size: 1.3rem;
-  cursor: pointer;
-  filter: grayscale(1);
-  transition: filter 0.2s ease;
-  flex-shrink: 0;
-}
-
-.pill-volume-icon:hover {
-  filter: grayscale(0);
-}
-
-.pill-volume-bar {
-  flex: 1;
-  height: 4px;
-  -webkit-appearance: none;
-  appearance: none;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-  outline: none;
-  cursor: pointer;
-}
-
-.pill-volume-bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: white;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-.pill-volume-bar::-moz-range-thumb {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: white;
-  cursor: pointer;
-  border: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .music-player-pill {

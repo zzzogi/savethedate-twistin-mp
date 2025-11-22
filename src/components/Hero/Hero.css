@@ -117,7 +117,7 @@
 /* ALL CONTENT AT BOTTOM (<1180px) */
 @media (max-width: 1180px) {
   .hero-section {
-    background-image: url("/public/images/hero-bg-mobile.webp");
+    background-image: url("/public/images/hero-bg-tablet.webp");
     justify-content: center;
     align-items: flex-end; /* Align to bottom */
   }
@@ -214,6 +214,7 @@
 /* Mobile */
 @media (max-width: 768px) {
   .hero-section {
+    background-image: url("/public/images/hero-bg-mobile.webp");
     background-attachment: scroll;
   }
 

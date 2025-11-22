@@ -7,7 +7,6 @@ const MusicPlayer = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(0.7);
   const [autoplayBlocked, setAutoplayBlocked] = useState(false);
 
   // Handle first user interaction to start music
@@ -32,8 +31,6 @@ const MusicPlayer = () => {
     const attemptAutoplay = async () => {
       try {
         if (audioRef.current) {
-          audioRef.current.volume = volume;
-
           // Try to play
           await audioRef.current.play();
           setIsPlaying(true);
@@ -58,7 +55,7 @@ const MusicPlayer = () => {
       document.removeEventListener("click", handleFirstInteraction);
       document.removeEventListener("touchstart", handleFirstInteraction);
     };
-  }, [handleFirstInteraction, volume]);
+  }, [handleFirstInteraction]);
 
   const togglePlay = () => {
     if (isPlaying) {
@@ -85,12 +82,6 @@ const MusicPlayer = () => {
     const seekTime = (e.target.value / 100) * duration;
     audioRef.current.currentTime = seekTime;
     setCurrentTime(seekTime);
-  };
-
-  const handleVolumeChange = (e) => {
-    const newVolume = e.target.value / 100;
-    setVolume(newVolume);
-    audioRef.current.volume = newVolume;
   };
 
   const formatTime = (seconds) => {
@@ -201,20 +192,6 @@ const MusicPlayer = () => {
               onChange={handleSeek}
             />
             <span className="pill-time">{formatTime(duration)}</span>
-          </div>
-
-          <div className="pill-volume">
-            <button className="pill-volume-icon">
-              {volume === 0 ? "🔇" : volume < 0.5 ? "🔉" : "🔊"}
-            </button>
-            <input
-              type="range"
-              className="pill-volume-bar"
-              min="0"
-              max="100"
-              value={volume * 100}
-              onChange={handleVolumeChange}
-            />
           </div>
         </div>
       </div>
