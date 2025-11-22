@@ -9,10 +9,11 @@ import RSVP from "./components/RSVP/RSVP";
 import Countdown from "./components/Countdown/Countdown";
 import Footer from "./components/Footer/Footer";
 import SaveTheDate from "./components/SaveTheDate/SaveTheDate";
-import Timeline from "./components/Timeline/Timeline";
+// import Timeline from "./components/Timeline/Timeline";
 import FloatingButtons from "./components/FloatingButton/FloatingButtons";
 import MV from "./components/MV/MV";
 import Testimonial from "./components/Testimonial/Testimonial";
+import StudioCarousel from "./components/StudioCarousel/StudioCarousel";
 
 function App() {
   return (
@@ -20,10 +21,11 @@ function App() {
       <Hero />
       <SaveTheDate />
       <WeddingInfo />
-      <Timeline />
+      {/* <Timeline /> */}
       <RSVP />
       <Countdown />
       <CoupleIntro />
+      <StudioCarousel />
       <OurStory />
       <MV />
       <Gallery />

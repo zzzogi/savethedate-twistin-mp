@@ -4,8 +4,28 @@ import "./WeddingInfo.css";
 
 const WeddingInfo = () => {
   const [visibleSections, setVisibleSections] = useState([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const sectionRefs = useRef([]);
 
+  const studioImages = [
+    "/images/studio-1.webp",
+    "/images/studio-2.webp",
+    "/images/studio-3.webp",
+    "/images/studio-4.webp",
+  ];
+
+  // Slideshow effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % studioImages.length
+      );
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [studioImages.length]);
+
+  // Intersection observer for animations
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -45,7 +65,7 @@ const WeddingInfo = () => {
       </div>
 
       <div className="container">
-        {/* PART 1: Invitation Title + Names + Photo */}
+        {/* PART 1: Invitation Title + Names + Photo Slideshow */}
         <div
           className={`invitation-block animate-section ${
             visibleSections.includes(0) ? "visible" : ""
@@ -63,13 +83,36 @@ const WeddingInfo = () => {
             <h3 className="bride-name">Nguyễn Ngọc Minh Phương</h3>
           </div>
 
+          {/* SLIDESHOW */}
           <div className="couple-photo-main">
-            <img
-              src="/images/couple-main.webp"
-              alt="Chung Bảo & Minh Phương"
-              width={1080}
-              height={1620}
-            />
+            <div className="slideshow-container">
+              {studioImages.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Chung Bảo & Minh Phương - Studio ${index + 1}`}
+                  className={`slideshow-image ${
+                    index === currentImageIndex ? "active" : ""
+                  }`}
+                  width={1080}
+                  height={1620}
+                />
+              ))}
+            </div>
+
+            {/* Dots Navigation */}
+            <div className="slideshow-dots">
+              {studioImages.map((_, index) => (
+                <button
+                  key={index}
+                  className={`slideshow-dot ${
+                    index === currentImageIndex ? "active" : ""
+                  }`}
+                  onClick={() => setCurrentImageIndex(index)}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
 
@@ -85,11 +128,10 @@ const WeddingInfo = () => {
             Lễ thành hôn sẽ được tổ chức vào lúc 17 giờ 30 phút
           </h2>
 
-          {/* Calendar Display - FIXED */}
+          {/* Calendar Display */}
           <div className="calendar-display">
             <div className="calendar-day">Chủ Nhật</div>
 
-            {/* Date Row - 3 divs in 1 line */}
             <div className="calendar-date-row">
               <div className="calendar-month">Tháng 11</div>
               <div className="calendar-date">30</div>
@@ -99,7 +141,7 @@ const WeddingInfo = () => {
             <p className="calendar-lunar">(Tức ngày 11 tháng 10 năm Ất Tỵ)</p>
           </div>
 
-          {/* NEW: Family Information */}
+          {/* Family Information */}
           <div className="family-info-section">
             <div className="family-grid">
               {/* Nhà Trai */}
@@ -135,7 +177,7 @@ const WeddingInfo = () => {
             height={445}
           />
 
-          {/* Venue Information - WIDER */}
+          {/* Venue Information */}
           <div className="venue-info-block">
             <p className="venue-label">Tiệc cưới được tổ chức tại:</p>
             <h3 className="venue-name-main">TRUNG TÂM TIỆC CƯỚI THE ONE</h3>
