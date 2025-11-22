@@ -7,12 +7,7 @@ const WeddingInfo = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const sectionRefs = useRef([]);
 
-  const studioImages = [
-    "/images/studio-1.webp",
-    "/images/studio-2.webp",
-    "/images/studio-3.webp",
-    "/images/studio-4.webp",
-  ];
+  const studioImages = ["/images/studio-1.webp", "/images/studio-4.webp"];
 
   // Slideshow effect
   useEffect(() => {

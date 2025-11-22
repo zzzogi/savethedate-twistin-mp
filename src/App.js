@@ -13,7 +13,7 @@ import SaveTheDate from "./components/SaveTheDate/SaveTheDate";
 import FloatingButtons from "./components/FloatingButton/FloatingButtons";
 import MV from "./components/MV/MV";
 import Testimonial from "./components/Testimonial/Testimonial";
-import StudioCarousel from "./components/StudioCarousel/StudioCarousel";
+// import StudioCarousel from "./components/StudioCarousel/StudioCarousel";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
       <RSVP />
       <Countdown />
       <CoupleIntro />
-      <StudioCarousel />
+      {/* <StudioCarousel /> */}
       <OurStory />
       <MV />
       <Gallery />
